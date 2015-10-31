@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Digital Monitoring | DigiMon </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <body class="insideSystem">
+	<div id="interface">
+		<div id="header">
+			<div class="main">
+				<ul class="menu" id="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Contato </a></li>
+					<li><a href="#">Registre-se</a></li> 
+					<li><a href="#">Login</a></li>
+					</div>
+			
+		</div><!-- Fim da div header -->
+		
+    @RenderBody()
+       <div id="rodape">
+			<div class="main">
+				<div id="footer">
+					&copy 2015 - Projeto Digimon | Forsoft Rio
+				</div><!--Fim div Footer-->
+			</div><!--Fim div main do rodape-->
+		</div><!--Fim div "rodape"-->
+	</div><!--Fim div Interface-->
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
