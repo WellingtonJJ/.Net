@@ -11,7 +11,7 @@ namespace ProjetoDigimon.Controllers
         //
         // GET: /Usuario/
 
-        public ActionResult Index()
+        public ActionResult ui012cadastrarusuario()
         {
             return View();
         }

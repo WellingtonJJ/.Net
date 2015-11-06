@@ -11,7 +11,7 @@ namespace ProjetoDigimon.Controllers
         //
         // GET: /Conta/
 
-        public ActionResult Index()
+        public ActionResult ui032minhaconta()
         {
             return View();
         }

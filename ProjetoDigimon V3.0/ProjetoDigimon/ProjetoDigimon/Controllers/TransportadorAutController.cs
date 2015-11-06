@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace ProjetoDigimon.Controllers
 {
-    public class RelatorioController : Controller
+    public class TransportadorAutController : Controller
     {
         //
-        // GET: /Relatorio/
-
-        public ActionResult ui030relatorio()
+        // GET: /TransportadorAut/
+        //ui004 é o cadastrartac
+        public ActionResult ui004casdastrartransportadoraut()
         {
             return View();
         }

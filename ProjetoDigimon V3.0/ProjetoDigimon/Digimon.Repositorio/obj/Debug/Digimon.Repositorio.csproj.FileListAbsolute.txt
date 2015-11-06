@@ -8,3 +8,8 @@ C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\bin\
 C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.dll
 C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Repositorio\bin\Debug\Digimon.Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Repositorio\bin\Debug\Digimon.Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.pdb

@@ -11,7 +11,7 @@ namespace ProjetoDigimon.Controllers
         //
         // GET: /Frete/
 
-        public ActionResult Index()
+        public ActionResult ui006cadastrarfrete()
         {
             return View();
         }
