@@ -11,14 +11,14 @@ namespace ProjetoDigimon.Controllers
     {
         public ActionResult ui008cadastrarveiculo()
         {
-            var veiculo = new ClasseVeiculo
+            var veiculo = new ModelVeiculo
             {
 
             };
             return View();
         }
         [HttpPost]
-        public ActionResult ui008cadastrarveiculo(ClasseVeiculo veiculo)
+        public ActionResult ui008cadastrarveiculo(ModelVeiculo veiculo)
         {
             return View();
         }

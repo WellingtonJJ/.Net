@@ -118,8 +118,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADO\Conexao.cs" />
-    <Compile Include="ADO\Persistencia.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -135,11 +133,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ClasseFrete.cs" />
-    <Compile Include="Models\ClasseMotorista.cs" />
-    <Compile Include="Models\ClasseTransportador.cs" />
-    <Compile Include="Models\ClasseUsuario.cs" />
-    <Compile Include="Models\ClasseVeiculo.cs" />
+    <Compile Include="Models\ModelFrete.cs" />
+    <Compile Include="Models\ModelMotorista.cs" />
+    <Compile Include="Models\ModelTransportador.cs" />
+    <Compile Include="Models\ModelUsuario.cs" />
+    <Compile Include="Models\ModelVeiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -215,7 +213,9 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -227,13 +227,27 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Veiculo\ui008cadastrarveiculo.cshtml" />
-    <Content Include="Views\Shared\Layoutoff.cshtml" />
+    <Content Include="Views\Motorista\ui020cadastrarmotorista.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Digimon.Aplicacao\Digimon.Aplicacao.csproj">
+      <Project>{38fe8f8d-b243-449c-b83e-02bb8cb725a5}</Project>
+      <Name>Digimon.Aplicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Digimon.Dominio\Digimon.Dominio.csproj">
+      <Project>{8c55d0ba-6368-4fa4-99a2-8604e919975a}</Project>
+      <Name>Digimon.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Digimon.Repositorio\Digimon.Repositorio.csproj">
+      <Project>{b276e9f0-a8ff-4142-be13-e916b32c963d}</Project>
+      <Name>Digimon.Repositorio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
