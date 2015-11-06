@@ -1,0 +1,171 @@
+﻿@model Digimon.Dominio.ClasseMotorista
+
+@{
+    ViewBag.Title = "ui020cadastrarmotorista";
+}
+
+<h2>ui020cadastrarmotorista</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>ClasseMotorista</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cpf)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cpf)
+            @Html.ValidationMessageFor(model => model.Cpf)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataNascimento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataNascimento)
+            @Html.ValidationMessageFor(model => model.DataNascimento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Sexo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Sexo)
+            @Html.ValidationMessageFor(model => model.Sexo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Orgao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Orgao)
+            @Html.ValidationMessageFor(model => model.Orgao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Rg)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Rg)
+            @Html.ValidationMessageFor(model => model.Rg)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cnh)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cnh)
+            @Html.ValidationMessageFor(model => model.Cnh)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UfRg)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UfRg)
+            @Html.ValidationMessageFor(model => model.UfRg)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Telefone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telefone)
+            @Html.ValidationMessageFor(model => model.Telefone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Celular)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Celular)
+            @Html.ValidationMessageFor(model => model.Celular)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Logradouro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Logradouro)
+            @Html.ValidationMessageFor(model => model.Logradouro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Bairro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Bairro)
+            @Html.ValidationMessageFor(model => model.Bairro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Numero)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Numero)
+            @Html.ValidationMessageFor(model => model.Numero)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Complemento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Complemento)
+            @Html.ValidationMessageFor(model => model.Complemento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cep)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cep)
+            @Html.ValidationMessageFor(model => model.Cep)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cidade)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cidade)
+            @Html.ValidationMessageFor(model => model.Cidade)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Uf)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Uf)
+            @Html.ValidationMessageFor(model => model.Uf)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "ui020cadastrarmotorista")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

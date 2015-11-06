@@ -1,0 +1,10 @@
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Repositorio\bin\Debug\Digimon.Repositorio.dll
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Repositorio\bin\Debug\Digimon.Repositorio.pdb
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.csprojResolveAssemblyReference.cache
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.dll
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.pdb
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\bin\Debug\Digimon.Repositorio.dll
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\bin\Debug\Digimon.Repositorio.pdb
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.dll
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Repositorio\obj\Debug\Digimon.Repositorio.pdb

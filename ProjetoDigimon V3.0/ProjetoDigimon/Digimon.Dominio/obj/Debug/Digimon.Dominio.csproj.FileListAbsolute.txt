@@ -1,0 +1,12 @@
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.dll
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.pdb
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
+I:\Users\deyvi\Desktop\Forsoft\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.dll
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.pdb
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Repositorio.dll
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Repositorio.pdb
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
+C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb
