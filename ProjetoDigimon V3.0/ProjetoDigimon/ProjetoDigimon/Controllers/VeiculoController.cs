@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using ProjetoDigimon.Models;
+using Digimon.Aplicacao;
+using Digimon.Dominio;
 
 namespace ProjetoDigimon.Controllers
 {
@@ -11,14 +12,14 @@ namespace ProjetoDigimon.Controllers
     {
         public ActionResult ui008cadastrarveiculo()
         {
-            var veiculo = new ModelVeiculo
+            var veiculo = new ClasseVeiculo
             {
 
             };
             return View();
         }
         [HttpPost]
-        public ActionResult ui008cadastrarveiculo(ModelVeiculo veiculo)
+        public ActionResult ui008cadastrarveiculo(ClasseVeiculo veiculo)
         {
             return View();
         }
