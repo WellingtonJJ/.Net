@@ -10,3 +10,10 @@ C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\bin\Debu
 C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache
 C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
 C:\Users\Roskopff\Desktop\ProjetoDigimon\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb

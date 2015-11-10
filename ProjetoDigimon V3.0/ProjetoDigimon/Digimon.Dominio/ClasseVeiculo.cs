@@ -23,7 +23,14 @@ namespace Digimon.Dominio
         private Boolean SITUACAO;
         private int IDTRANSPORTADOR;
         private string CIDADE;
+        private string TRANSPORTADOR;
 
+        public string Transportador
+        {
+            get { return TRANSPORTADOR; }
+            set { TRANSPORTADOR = value; }
+        }
+        
 
         
         public int IdVeiculo
@@ -61,55 +68,41 @@ namespace Digimon.Dominio
             get { return MODELO; }
             set { MODELO = value; }
         }
-        
         public string Marca
         {
             get { return MARCA; }
             set { MARCA = value; }
         }
-        
         public string AnoDeFabrica
         {
             get { return ANO_DE_FABRICA; }
             set { ANO_DE_FABRICA = value; }
         }
-        
         public string NumEixos
         {
             get { return NUMEIXOS; }
             set { NUMEIXOS = value; }
-        }
-        
+        }        
         public float Tara
         {
             get { return TARA; }
             set { TARA = value; }
         }
-
-        
         public float CMT
         {
             get { return cmt; }
             set { cmt = value; }
         }
-
-        
         public float PBT
         {
             get { return pbt; }
             set { pbt = value; }
         }
-
-        
         public Boolean Situacao
         {
             get { return SITUACAO; }
             set { SITUACAO = value; }
-        }
-
-
-
-        
+        }        
         public int IdTransportador
         {
             get { return IDTRANSPORTADOR; }

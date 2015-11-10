@@ -14,8 +14,6 @@ namespace ProjetoDigimon.Controllers
          {
              return View();
          }
-
-
         [HttpPost]
          public ActionResult ui020cadastrarmotorista(ClasseMotorista motorista)
         {
@@ -27,7 +25,5 @@ namespace ProjetoDigimon.Controllers
             }
             return View(motorista);
         }
-
-
     }
 }

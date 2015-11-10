@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FreteAplicacao.cs" />
     <Compile Include="MotoristaAplicacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VeiculoAplicacao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Digimon.Dominio\Digimon.Dominio.csproj">

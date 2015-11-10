@@ -226,8 +226,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Veiculo\ui008cadastrarveiculo.cshtml" />
     <Content Include="Views\Motorista\ui020cadastrarmotorista.cshtml" />
+    <Content Include="Views\Veiculo\ui008cadastrarveiculo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

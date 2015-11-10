@@ -1,242 +1,121 @@
-﻿@model ProjetoDigimon.Models.ClasseVeiculo
+﻿@model Digimon.Dominio.ClasseVeiculo
+
 @{
-    ViewBag.Title = "Cadastrar Veículo ";
+    ViewBag.Title = "ui008cadastrarveiculo";
 }
 
-<div id="main">
-			<div class="centro">
-			
-					<!-- =======================NÃO EDITE ACIMA ====================-->
-			
-				<h1>Cadastro de Veículo</h1>
-				<form action="#" method="post" id="formularioJ">
-					<fieldset>
-						<legend>Dados Veículo</legend>
-						<div class="campo"> 
-							<label for="placaJ">Placa:</label><br> 
-							<input type="text" name="placa" id="placaJ" class="campoObrig" size="8" maxlength="8"><span id="x_placaJ" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-							<label for="renavamJ">Renavam:</label><br> 
-							<input type="text" name="renavam" id="renavamJ" class="campoObrig" size="9" maxlength="9"><span id="x_renavamJ" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-						<label for="ufJ">UF</label><br> 
-						<select id="ufJ"  name="UF"  class="campoObrig"> 
-							<option value="AC">AC</option> 
-							<option value="AL">AL</option> 
-							<option value="AM">AM</option> 
-							<option value="AP">AP</option> 
-							<option value="BA">BA</option> 
-							<option value="CE">CE</option> 
-							<option value="DF">DF</option> 
-							<option value="ES">ES</option> 
-							<option value="GO">GO</option> 
-							<option value="MA">MA</option> 
-							<option value="MT">MT</option> 
-							<option value="MS">MS</option> 
-							<option value="MG">MG</option> 
-							<option value="PA">PA</option> 
-							<option value="PB">PB</option> 
-							<option value="PR">PR</option> 
-							<option value="PE">PE</option> 
-							<option value="PI">PI</option> 
-							<option value="RJ" selected>RJ</option> 
-							<option value="RN">RN</option> 
-							<option value="RO">RO</option> 
-							<option value="RS">RS</option> 
-							<option value="RR">RR</option> 
-							<option value="SC">SC</option> 
-							<option value="SE">SE</option> 
-							<option value="SP">SP</option> 
-							<option value="TO">TO</option>
-						</select><span id="x_ufJ" class="tSpan"></span>
-					</div>
-						<div class="campo"> 
-							<label for="tipoJ">Tipo:</label><br> 
-							<select id="tipoJ" name="tipo" class="campoObrig"> 
-							<option value="MS">Motoneta</option>
-							<option value="AM">Motocicleta</option> 
-							<option value="AP">Triciclo</option> 
-							<option value="BA">Quadriciclo</option> 
-							<option value="CE">Caminhão</option> 
-							<option value="DF">Microônibus</option> 
-							<option value="ES">Ônibus</option> 
-							<option value="CA">Carreta</option> 
-						</select><span id="x_tipoJ" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-							<label for="modeloJ">Modelo:</label><br> 
-							<input type="text" name="modelo" id="modeloJ" size="16" class="campoObrig" maxlength="20"><span id="x_modeloJ" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-							<label for="marcaJ">Marca:</label><br> 
-							<input type="text" name="marca" id="marcaJ" class="campoObrig" size="20" maxlength="20"><span id="x_marcaJ" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-							<label for="anoDeFabricJ">Ano de Fabricação:</label><br> 
-							<input type="text" name="anoDeFabric" id="anoDeFabricJ" maxlength="4" size="12" class="campoObrig"><span id="x_anoDeFabric" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-							<label for="numEixosJ">Numero de Eixos:</label><br> 
-							<input type="text" name="numEixos" id="numEixosJ" size="11" class="campoObrig"><span id="x_numEixosJ" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-							<label for="taraJ">Tara:</label><br> 
-							<input type="text" name="tara" id="taraJ" class="campoObrig"><span id="x_taraJ" class="tSpan"></span>
-						</div>
-						<div class="campo"> 
-							<label for="cmtJ">CMT:</label><br> 
-							<input type="text" name="cmt" id="cmtJ" class="campoObrig"><span id="x_cmtJ" class="tSpan"></span>
-						</div>
-							<div class="campo"> 
-							<label for="pbtpbtcJ">PBT/PBTC:</label><br> 
-							<input type="text" name="pbtpbtc" id="pbtpbtcJ" class="campoObrig"><span id="x_pbtpbtcJ" class="tSpan"></span>
-						</div>
-					</fieldset>
-					
-					<fieldset>
-						<legend>Dados Transportador</legend>
-						<div class="campo"> 
-							<label for="rntrcJ">RNTRC:</label><br> 
-							<input type="text" name="rntrc" id="rntrcJ" class="campoObrig"><span id="x_rntrcJ" class="tSpan"></span>
-						</div>
-					</fieldset>
-					<fieldset>
-						<legend>Dados Pessoa Física</legend>
-						<div class="campo"> 
-							<label for="nomeJ">Nome Completo:</label><br> 
-							<input type="text" name="nome" id="nomeJ" maxlength="40" size="47" placeholder="Nome Completo" class="campoObrig iLetras"><span id="x_nomeJ" class="tSpan"></span>
-                        </div>
-						<div class="campo"> 
-							<label for="cpfJ">CPF:</label><br> 
-							<input type="text" name="cpf" id="cpfJ" maxlength="14" size="19" class="campoObrig"><span id="x_cpfJ" class="tSpan"></span>
-                        </div>
-						<div class="campo"> 
-							<label for="rgJ">RG:</label><br>
-							<input type="text" name="rg" id="rgJ" maxlength="14" size="17" class="campoObrig"><span id="x_rgJ" class="tSpan"></span>
-                        </div>
-						<div class="campo"> 
-							<label for="orgaoEmissorJ">Orgão Emissor:</label><br> 
-							<input type="text" name="orgaoEmissor" id="orgaoEmissorJ" placeholder="Ex: Detran" class="campoObrig"><span id="x_orgaoEmissorJ" class="tSpan"></span>
-						</div>
-					<div class="campo"> 
-						<label for="ufJ">UF</label><br> 
-						<select id="ufJPF" name="uf"  class="campoObrig"> 
-							<option value="AC">AC</option> 
-							<option value="AL">AL</option> 
-							<option value="AM">AM</option> 
-							<option value="AP">AP</option> 
-							<option value="BA">BA</option> 
-							<option value="CE">CE</option> 
-							<option value="DF">DF</option> 
-							<option value="ES">ES</option> 
-							<option value="GO">GO</option> 
-							<option value="MA">MA</option> 
-							<option value="MT">MT</option> 
-							<option value="MS">MS</option> 
-							<option value="MG">MG</option> 
-							<option value="PA">PA</option> 
-							<option value="PB">PB</option> 
-							<option value="PR">PR</option> 
-							<option value="PE">PE</option> 
-							<option value="PI">PI</option> 
-							<option value="RJ" selected>RJ</option> 
-							<option value="RN">RN</option> 
-							<option value="RO">RO</option> 
-							<option value="RS">RS</option> 
-							<option value="RR">RR</option> 
-							<option value="SC">SC</option> 
-							<option value="SE">SE</option> 
-							<option value="SP">SP</option> 
-							<option value="TO">TO</option>
-						</select><span id="x_ufJPF" class="tSpan"></span>
-					</div>
-</fieldset>
-<fieldset>
-	<legend>Dados Contato</legend>
-	<div class="campo"> 
-		<label for="telefoneJ">Telefone:</label><br> 
-		<input type="text" name="telefone" id="telefoneJ" placeholder="(  )____-_____" size="14" class="campoObrig"><span id="x_telefoneJ" class="tSpan"></span>
-	</div>
-	<div class="campo"> 
-		<label for="celularJ">Celular:</label><br> 
-		<input type="text" name="celular" id="celularJ" placeholder="(  )____-_____" size="14" class="campoObrig"><span id="x_celularJ" class="tSpan"></span>
-	</div>
-	<div class="campo"> 
-		<label for="emailJ">Email:</label><br> 
-		<input type="text" name="email" id="emailJ" placeholder="exempo@exemplo.com" size="32" class="campoObrig"><span id="x_emailJ" class="tSpan"></span>
-	</div>
-</fieldset>
-<fieldset>
-	<legend>Dados Endereço</legend>
-	<div class="campo"> 
-			<label for="logradouroJ">Logradouro:</label><br>
-			<input type="text" name="logradouro" id="logradouroJ" size="38" placeholder="Ex: Rua General Bruce" class="campoObrig"><span id="x_logradouroJ" class="tSpan"></span>
-		</div>
-	<div class="campo"> 
-		<label for="cepJ">CEP:</label><br> 
-		<input type="text" name="cep" id="cepJ" maxlength="10" size="18" class="campoObrig"><span id="x_cepJ" class="tSpan"></span>
-	</div>	
-	<div class="campo"> 
-		<label for="numeroJ">Número:</label><br> 
-		<input type="text" name="numero" id="numeroJ" class="campoObrig"><span id="x_numeroJ" class="tSpan"></span>
-	</div>
-	<div class="campo"> 
-		<label for="complementoJ">Complemento:</label><br> 
-		<input type="text" name="complemento" id="complementoJ" size="10" class="campoObrig"><span id="x_complementoJ" class="tSpan"></span>
-	</div>
-	<div class="campo"> 
-		<label for="bairroJ">Bairro:</label><br> 
-		<input type="text" name="bairro" id="bairroJ" class="campoObrig iLetras"><span id="x_bairroJ" class="tSpan"></span>
-	</div>
-	<div class="campo"> 
-		<label for="cidadeJ">Cidade:</label><br> 
-		<input type="text" name="cidade" id="cidadeJ" size="23" class="campoObrig iLetras"><span id="x_cidadeJ" class="tSpan"></span>
-	</div>
-					<div class="campo"> 
-						<label for="ufJ">UF</label><br> 
-						<select id="ufJDE" name="uf" class="campoObrig"> 
-							<option value="AC">AC</option> 
-							<option value="AL">AL</option> 
-							<option value="AM">AM</option> 
-							<option value="AP">AP</option> 
-							<option value="BA">BA</option> 
-							<option value="CE">CE</option> 
-							<option value="DF">DF</option> 
-							<option value="ES">ES</option> 
-							<option value="GO">GO</option> 
-							<option value="MA">MA</option> 
-							<option value="MT">MT</option> 
-							<option value="MS">MS</option> 
-							<option value="MG">MG</option> 
-							<option value="PA">PA</option> 
-							<option value="PB">PB</option> 
-							<option value="PR">PR</option> 
-							<option value="PE">PE</option> 
-							<option value="PI">PI</option> 
-							<option value="RJ" selected>RJ</option> 
-							<option value="RN">RN</option> 
-							<option value="RO">RO</option> 
-							<option value="RS">RS</option> 
-							<option value="RR">RR</option> 
-							<option value="SC">SC</option> 
-							<option value="SE">SE</option> 
-							<option value="SP">SP</option> 
-							<option value="TO">TO</option>
-						</select><span id="x_ufJDE" class="tSpan"></span>
-					</div><br>
-</fieldset>
+<h2>ui008cadastrarveiculo</h2>
 
-				<div class="botoes" id="botoes">
-					<input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
-					<input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Dados Veículo</legend>
+        <div class="campo">
+            <label for="placaJ">Placa:</label><br>
+            <input type="text" name="placa" id="placaJ" class="campoObrig" size="15" maxlength="8"><span id="x_placaJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="cidadeveicJ">Cidade do Veículo:</label><br>
+            <input type="text" name="cidadeveic" id="cidadeveicJ" class="campoObrig" size="22" maxlength="50"><span id="x_cidadeveicJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="ufveicJ">UF</label><br>
+            <select id="ufveicJ" name="ufveic" class="campoObrig">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ" selected>RJ</option>
+                <option value="RN">RN</option>
+                <option value="RO">RO</option>
+                <option value="RS">RS</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+                <option value="TO">TO</option>
+            </select><span id="x_ufveicJ" class="tSpan"></span>
+        </div>
+        @* Ajeitando a cagada no Banco de Dados, por favor não mexa. Ou esta entidade não irá funcionar*@
+        <div class="campo">
+            <label for="transportador">Transportador</label>
+            @Html.DropDownList("IdTransportador", string.Empty)
+        </div>
+        <div class="campo">
+            <label for="renavamJ">Renavam:</label><br>
+            <input type="text" name="renavam" id="renavamJ" class="campoObrig" size="17" maxlength="9"><span id="x_renavamJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="tipoJ">Tipo:</label><br>
+            <select id="tipoJ" name="tipo" class="campoObrig">
+                <option value="CL">Caminhão Leve</option>
+                <option value="CS">Caminhão Simples</option>
+                <option value="CT">Caminhão Trator</option>
+                <option value="CTE">Caminhão Trator Especial</option>
+                <option value="CF">Caminhonete/Furgão</option>
+                <option value="RB">Reboque</option>
+                <option value="SRB">Semi-Reboque</option>
+                <option value="SRB5">Semi-Reboque com 5º Roda / BITREM</option>
+                <option value="SRBE">Semi-Reboque Especial</option>
+                <option value="UL">Utilitário Leve</option>
+                <option value="VA">Veículo Operacional de Apoio</option>
+            </select><span id="x_tipoJ" class="tSpan"></span>
+        </div>
+
+
+        <div class="campo">
+            <label for="modeloJ">Modelo:</label><br>
+            <input type="text" name="modelo" id="modeloJ" size="15" class="campoObrig" maxlength="20"><span id="x_modeloJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="marcaJ">Marca:</label><br>
+            <input type="text" name="marca" id="marcaJ" class="campoObrig" size="16" maxlength="20"><span id="x_marcaJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="anoDeFabricJ">Ano de Fabricação:</label><br>
+            <input type="text" name="anoDeFabric" id="anoDeFabricJ" maxlength="4" size="10" class="campoObrig"><span id="x_anoDeFabric" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="numEixosJ">Numero de Eixos:</label><br>
+            <input type="text" name="numEixos" id="numEixosJ" size="9" class="campoObrig"><span id="x_numEixosJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="taraJ">Tara:</label><br>
+            <input type="text" name="tara" id="taraJ" size="9" maxlength="5" class="campoObrig"><span id="x_taraJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="cmtJ">CMT:</label><br>
+            <input type="text" name="cmt" id="cmtJ" size="9" maxlength="5" class="campoObrig"><span id="x_cmtJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="pbtpbtcJ">PBT/PBTC:</label><br>
+            <input type="text" name="pbtpbtc" id="pbtpbtcJ" size="11" class="campoObrig"><span id="x_pbtpbtcJ" class="tSpan"></span>
+        </div>
+    </fieldset>
 					
-				</div>
-				</form>
-				
-				<!-- ===== NÃO EDITE A PARTIR DAQUI =========================================-->
-				
-			</div><!--Fim div centro-->		
-			<div id="clear"></div><!--Fim div clear-->
-		</div><!--Fim div main conteúdo-->	
+					
+					
+    <div class="botoes" id="botoes">
+        <input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
+        <input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
+    </div>
+
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
