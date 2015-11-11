@@ -11,7 +11,12 @@ namespace ProjetoDigimon.Controllers
         //
         // GET: /Ajuda/
 
-        public ActionResult Index()
+        public ActionResult ui033faq()
+        {
+            return View();
+        }
+
+        public ActionResult ui034faleconosco()
         {
             return View();
         }

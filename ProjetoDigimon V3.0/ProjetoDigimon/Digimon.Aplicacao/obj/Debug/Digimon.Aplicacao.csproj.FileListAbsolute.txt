@@ -25,6 +25,7 @@ C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Digimon.Aplicacao\b
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.csprojResolveAssemblyReference.cache
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.dll
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.pdb
+<<<<<<< HEAD
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.dll
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.pdb
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Dominio.dll
@@ -34,3 +35,14 @@ C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.csprojResolveAssemblyReference.cache
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.dll
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.pdb
+=======
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\bin\Debug\Digimon.Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.pdb
+>>>>>>> 198b3100af11047a8ce6896584449c6f4b87af41

@@ -102,6 +102,7 @@ C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\ProjetoDigimon\bin\
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.csprojResolveAssemblyReference.cache
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.dll
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.pdb
+<<<<<<< HEAD
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\ProjetoDigimon.dll
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\ProjetoDigimon.pdb
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Antlr3.Runtime.dll
@@ -138,3 +139,41 @@ C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.csprojResolveAssemblyReference.cache
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.dll
 C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.pdb
+=======
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\ProjetoDigimon.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\ProjetoDigimon.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Antlr3.Runtime.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Digimon.Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\EntityFramework.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Newtonsoft.Json.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Net.Http.Formatting.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Http.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Http.WebHost.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Optimization.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Providers.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Razor.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.WebPages.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.WebPages.Razor.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\WebGrease.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Digimon.Aplicacao.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Digimon.Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\EntityFramework.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\Newtonsoft.Json.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Net.Http.Formatting.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Http.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Http.WebHost.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Mvc.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.Razor.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.WebPages.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\bin\System.Web.WebPages.Razor.xml
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.dll
+C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\ProjetoDigimon\obj\Debug\ProjetoDigimon.pdb
+>>>>>>> 198b3100af11047a8ce6896584449c6f4b87af41

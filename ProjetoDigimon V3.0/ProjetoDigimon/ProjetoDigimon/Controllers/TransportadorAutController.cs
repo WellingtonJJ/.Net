@@ -8,12 +8,12 @@ using Digimon.Dominio;
 
 namespace ProjetoDigimon.Controllers
 {
-    public class FreteController : Controller
+    public class TransportadorAutController : Controller
     {
         //
-        // GET: /Frete/
-
-        public ActionResult ui006cadastrarfrete()
+        // GET: /TransportadorAut/
+        //ui004 é o cadastrartac
+        public ActionResult ui004casdastrartransportadoraut()
         {
             return View();
         }

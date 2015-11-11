@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace ProjetoDigimon.Controllers
 {
     public class RelatorioController : Controller
@@ -11,7 +12,7 @@ namespace ProjetoDigimon.Controllers
         //
         // GET: /Relatorio/
 
-        public ActionResult Index()
+        public ActionResult ui030relatorio()
         {
             return View();
         }
