@@ -27,27 +27,23 @@ namespace Digimon.Dominio
             set { TIPO = value; }
         }
         
-
         public int IdTransportador
         {
             get { return IDTRANSPORTADOR; }
             set { IDTRANSPORTADOR = value; }
         }
-        
-
+       
         public int IdVeiculo
         {
             get { return IDVEICULO; }
             set { IDVEICULO = value; }
         }
         
-
         public int IdMotorista
         {
             get { return IDMOTORISTA; }
             set { IDMOTORISTA = value; }
         }
-        
         
         public int IdFrete
         {

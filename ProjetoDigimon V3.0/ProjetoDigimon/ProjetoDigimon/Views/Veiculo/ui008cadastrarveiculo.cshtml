@@ -51,10 +51,9 @@
                 <option value="TO">TO</option>
             </select><span id="x_ufveicJ" class="tSpan"></span>
         </div>
-        @* Ajeitando a cagada no Banco de Dados, por favor não mexa. Ou esta entidade não irá funcionar*@
+        @* Ajeitando a cagada, por favor não mexa. Ou esta entidade não irá funcionar*@
         <div class="campo">
-            <label for="transportador">Transportador</label>
-            @Html.DropDownList("IdTransportador", string.Empty)
+            @Html.DropDownListFor(M => M.IdTransportador, new SelectList(Model.Transportador, "Value", "Transportador"))
         </div>
         <div class="campo">
             <label for="renavamJ">Renavam:</label><br>
