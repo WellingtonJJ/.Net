@@ -27,3 +27,10 @@ C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\
 C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
 C:\Users\AlunoInfnet\Desktop\New folder\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb
 >>>>>>> 198b3100af11047a8ce6896584449c6f4b87af41
+C:\Users\AlunoInfnet\Desktop\Git\pairulito\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\Git\pairulito\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\Git\pairulito\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\Git\pairulito\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\bin\Debug\Digimon.Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\Git\pairulito\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\Git\pairulito\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\Git\pairulito\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb
