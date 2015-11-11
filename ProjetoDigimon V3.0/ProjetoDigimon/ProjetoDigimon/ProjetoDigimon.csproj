@@ -268,6 +268,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Motorista\ui020cadastrarmotorista.cshtml" />
     <Content Include="Views\Veiculo\ui008cadastrarveiculo.cshtml" />
+    <Content Include="Views\Frete\ui006cadastrarfrete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -7,17 +7,25 @@ using System.Data.SqlClient;
 
 namespace Digimon.Aplicacao
 {
-   public class FreteAplicacao
+    public class FreteAplicacao
     {
-       private Contexto contexto;
+        private Contexto contexto;
 
-       private void Inserir(ClasseFrete frete)
-       {
-           var strQuery = "";
+        private void Inserir(ClasseFrete frete)
+        {
+            var strQuery = "";
 
-           strQuery += "INSERT INTO FRETE(TIPO, SITUACAO)";
-           strQuery += string.Format("VALUES('{O}', '{1}'})", frete.Tipo, frete.Situacao);
-       
-       }
-   }
+            strQuery += "INSERT INTO FRETE(TIPO, SITUACAO)";
+            strQuery += string.Format("VALUES('{O}', '{1}'})", frete.Tipo, frete.Situacao);
+
+        }
+        public void Salvar(ClasseFrete frete)
+        {
+            if (frete.IdFrete > 0) ;
+            // Alterar(frete); <- Ainda não incrementado.
+            else
+                Inserir(frete);
+
+        }
+    }
 }
