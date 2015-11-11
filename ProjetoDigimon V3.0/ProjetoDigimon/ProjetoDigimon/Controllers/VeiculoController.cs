@@ -7,6 +7,10 @@ using Digimon.Dominio;
 using Digimon.Aplicacao;
 using Digimon.Aplicacao;
 using Digimon.Dominio;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0a26a787690f86e728ec87eb95030461a296763c
 
 namespace ProjetoDigimon.Controllers
 {
@@ -14,9 +18,23 @@ namespace ProjetoDigimon.Controllers
     {
         public ActionResult ui008cadastrarveiculo()
         {
+<<<<<<< HEAD
             var veiculo = new VeiculoAplicacao();
             var ListaTransportador = veiculo.ListarTransportador();
             return View(ListaTransportador);
+=======
+
+            var veiculo = new VeiculoAplicacao();
+            var ListaTransportador = veiculo.ListarTransportador();
+            return View(ListaTransportador);
+
+            var veiculo = new ClasseVeiculo
+            {
+
+            };
+            return View();
+
+>>>>>>> 0a26a787690f86e728ec87eb95030461a296763c
         }
         [HttpPost]
         public ActionResult ui008cadastrarveiculo(ClasseVeiculo veiculo)

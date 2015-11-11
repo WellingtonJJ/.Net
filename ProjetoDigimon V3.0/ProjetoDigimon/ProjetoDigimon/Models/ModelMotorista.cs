@@ -7,36 +7,134 @@ namespace ProjetoDigimon.Models
 {
     public class ModelMotorista
     {
-        public int IdMotorista { get; set; }
+        private int IDMOTORISTA;
 
-        public string Nome { get; set; }
+        public int IdMotorista
+        {
+            get { return IDMOTORISTA; }
+            set { IDMOTORISTA = value; }
+        }
 
-        public string Cpf { get; set; }
+        private string NOME;
 
-        public string DataNascimento { get; set; }
+        public string Nome
+        {
+            get { return NOME; }
+            set { NOME = value; }
+        }
 
-        public string Sexo { get; set; }
+        private string CPF;
 
-        public string Orgao { get; set; }
+        public string Cpf
+        {
+            get { return CPF; }
+            set { CPF = value; }
+        }
 
-        public string Telefone { get; set; }
+        private string DATANASCIMENTO;
 
-        public string Celular { get; set; }
+        public string DataNascimento
+        {
+            get { return DATANASCIMENTO; }
+            set { DATANASCIMENTO = value; }
+        }
 
-        public string Email { get; set; }
 
-        public string Logradouro { get; set; }
+        private string SEXO;
 
-        public string Bairro { get; set; }
+        public string Sexo
+        {
+            get { return SEXO; }
+            set { SEXO = value; }
+        }
 
-        public string Numero { get; set; }
 
-        public string Complemento { get; set; }
+        private string ORGAO;
 
-        public string Cep { get; set; }
+        public string Orgao
+        {
+            get { return ORGAO; }
+            set { ORGAO = value; }
+        }
 
-        public string Cidade { get; set; }
+        private string TELEFONE;
 
-        public string Uf { get; set; }
+        public string Telefone
+        {
+            get { return TELEFONE; }
+            set { TELEFONE = value; }
+        }
+
+        private string CELULAR;
+
+        public string Celular
+        {
+            get { return CELULAR; }
+            set { CELULAR = value; }
+        }
+
+        private string EMAIL;
+
+        public string Email
+        {
+            get { return EMAIL; }
+            set { EMAIL = value; }
+        }
+
+        private string LOGRADOURO;
+
+        public string Logradouro
+        {
+            get { return LOGRADOURO; }
+            set { LOGRADOURO = value; }
+        }
+
+        private string BAIRRO;
+
+        public string Bairro
+        {
+            get { return BAIRRO; }
+            set { BAIRRO = value; }
+        }
+        private string NUMERO;
+
+        public string Numero
+        {
+            get { return NUMERO; }
+            set { NUMERO = value; }
+        }
+
+        private string COMPLEMENTO;
+
+        public string Complemento
+        {
+            get { return COMPLEMENTO; }
+            set { COMPLEMENTO = value; }
+        }
+
+        private string CEP;
+
+        public string Cep
+        {
+            get { return CEP; }
+            set { CEP = value; }
+        }
+
+        private string CIDADE;
+
+        public string Cidade
+        {
+            get { return CIDADE; }
+            set { CIDADE = value; }
+        }
+
+        private string UF;
+
+        public string Uf
+        {
+            get { return UF; }
+            set { UF = value; }
+        }
+       
     }
 }
