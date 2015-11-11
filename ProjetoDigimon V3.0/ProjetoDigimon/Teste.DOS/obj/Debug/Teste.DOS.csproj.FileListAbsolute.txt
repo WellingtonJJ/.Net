@@ -41,3 +41,15 @@ C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Teste.DOS\bin\Debug
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Teste.DOS\obj\Debug\Teste.DOS.csprojResolveAssemblyReference.cache
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Teste.DOS\obj\Debug\Teste.DOS.exe
 C:\Users\AlunoInfnet\Downloads\ProjetoDigimon\ProjetoDigimon\Teste.DOS\obj\Debug\Teste.DOS.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Teste.DOS.exe.config
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Teste.DOS.exe
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Teste.DOS.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Digimon.Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Digimon.Aplicacao.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\bin\Debug\Digimon.Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\obj\Debug\Teste.DOS.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\obj\Debug\Teste.DOS.exe
+C:\Users\AlunoInfnet\Desktop\.NET-master\.Net\ProjetoDigimon V3.0\ProjetoDigimon\Teste.DOS\obj\Debug\Teste.DOS.pdb
