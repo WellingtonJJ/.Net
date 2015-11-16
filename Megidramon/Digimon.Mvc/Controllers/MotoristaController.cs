@@ -122,14 +122,14 @@ namespace Digimon.Mvc.Controllers
                         {  // USUARIO NAO TEM PERMISSAO PARA ACESSAR ESTA PAGINA
                             Response.Redirect("https://www.google.com.br/webhp?hl=pt-BR");
                         }
-                    }
+                    } */
 
                     if (ModelState.IsValid)
                     {
                         var appMotorista = new MotoristaAplicacao();
                         appMotorista.Salvar(motorista);
                         return RedirectToAction("Index");
-                    }*/ 
+                    }
             return View(motorista);
         }
 
