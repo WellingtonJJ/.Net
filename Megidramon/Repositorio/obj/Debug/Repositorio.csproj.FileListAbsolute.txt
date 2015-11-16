@@ -14,3 +14,14 @@ C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Repositorio\bin\Debug\normnf
 C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Repositorio\obj\Debug\Repositorio.dll
 C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Repositorio\obj\Debug\Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\mscorlib.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\normidna.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\normnfc.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\normnfd.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\normnfkc.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\bin\Debug\normnfkd.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Repositorio\obj\Debug\Repositorio.pdb
