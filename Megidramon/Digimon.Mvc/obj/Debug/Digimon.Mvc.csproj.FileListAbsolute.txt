@@ -30,3 +30,97 @@ i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Mvc\bin\
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.csprojResolveAssemblyReference.cache
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.dll
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Mvc.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Antlr3.Runtime.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\EntityFramework.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\mscorlib.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Newtonsoft.Json.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.Formatting.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.WebRequest.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.WebHost.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Optimization.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Providers.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Razor.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Razor.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\WebGrease.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Aplicacao.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\EntityFramework.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Newtonsoft.Json.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.Formatting.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.WebRequest.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.WebHost.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Mvc.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Razor.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Razor.xml
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\normidna.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\normnfc.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\normnfd.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\normnfkc.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\bin\normnfkd.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.pdb
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Mvc.pdb
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Antlr3.Runtime.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\EntityFramework.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\mscorlib.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Newtonsoft.Json.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.Formatting.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.WebRequest.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.WebHost.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Optimization.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Providers.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Razor.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Razor.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\WebGrease.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Aplicacao.pdb
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\EntityFramework.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Newtonsoft.Json.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.Formatting.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Net.Http.WebRequest.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Http.WebHost.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Mvc.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.Razor.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\System.Web.WebPages.Razor.xml
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\normidna.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\normnfc.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\normnfd.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\normnfkc.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\bin\normnfkd.nlp
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.dll
+C:\Users\AlunoInfnet\Desktop\git projeto\.Net\Megidramon\Digimon.Mvc\obj\Debug\Digimon.Mvc.pdb
