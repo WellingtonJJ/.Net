@@ -1,0 +1,5 @@
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\bin\Debug\Digimon.Dominio.dll
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\bin\Debug\Digimon.Dominio.pdb
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache

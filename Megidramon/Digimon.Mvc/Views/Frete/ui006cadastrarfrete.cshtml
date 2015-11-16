@@ -1,0 +1,212 @@
+﻿@model Digimon.Dominio.Frete
+
+@{
+    ViewBag.Title = "Cadastro de Fretes";
+}
+
+<h2>Cadastrar Frete</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Frete</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Placa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Placa)
+            @Html.ValidationMessageFor(model => model.Placa)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cnh)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cnh)
+            @Html.ValidationMessageFor(model => model.Cnh)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Tipo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Tipo)
+            @Html.ValidationMessageFor(model => model.Tipo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataEntrega)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataEntrega)
+            @Html.ValidationMessageFor(model => model.DataEntrega)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataSaida)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataSaida)
+            @Html.ValidationMessageFor(model => model.DataSaida)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Rtnrc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Rtnrc)
+            @Html.ValidationMessageFor(model => model.Rtnrc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TipoCarga)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TipoCarga)
+            @Html.ValidationMessageFor(model => model.TipoCarga)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Remetente)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Remetente)
+            @Html.ValidationMessageFor(model => model.Remetente)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Destinatario)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Destinatario)
+            @Html.ValidationMessageFor(model => model.Destinatario)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RLogradouro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RLogradouro)
+            @Html.ValidationMessageFor(model => model.RLogradouro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RNumero)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RNumero)
+            @Html.ValidationMessageFor(model => model.RNumero)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RComplemento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RComplemento)
+            @Html.ValidationMessageFor(model => model.RComplemento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RCep)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RCep)
+            @Html.ValidationMessageFor(model => model.RCep)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RBairro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RBairro)
+            @Html.ValidationMessageFor(model => model.RBairro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RCidade)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RCidade)
+            @Html.ValidationMessageFor(model => model.RCidade)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RUf)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RUf)
+            @Html.ValidationMessageFor(model => model.RUf)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DLogradouro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DLogradouro)
+            @Html.ValidationMessageFor(model => model.DLogradouro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DNumero)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DNumero)
+            @Html.ValidationMessageFor(model => model.DNumero)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DComplemento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DComplemento)
+            @Html.ValidationMessageFor(model => model.DComplemento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DCep)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DCep)
+            @Html.ValidationMessageFor(model => model.DCep)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DBairro)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DBairro)
+            @Html.ValidationMessageFor(model => model.DBairro)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DCidade)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DCidade)
+            @Html.ValidationMessageFor(model => model.DCidade)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DUf)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DUf)
+            @Html.ValidationMessageFor(model => model.DUf)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

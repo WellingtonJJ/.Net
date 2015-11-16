@@ -1,0 +1,9 @@
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.dll
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.pdb
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Dominio.dll
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\bin\Debug\Repositorio.dll
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Dominio.pdb
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\bin\Debug\Repositorio.pdb
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.csprojResolveAssemblyReference.cache
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.dll
+i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.pdb
