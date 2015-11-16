@@ -7,3 +7,18 @@ i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicaca
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.csprojResolveAssemblyReference.cache
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.dll
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Aplicacao.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\mscorlib.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\Repositorio.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\Repositorio.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\normidna.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\normnfc.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\normnfd.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\normnfkc.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\bin\Debug\normnfkd.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Aplicacao\obj\Debug\Digimon.Aplicacao.pdb

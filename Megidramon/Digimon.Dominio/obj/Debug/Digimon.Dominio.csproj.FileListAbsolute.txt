@@ -3,3 +3,14 @@ i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb
 i:\users\deyvi\documents\visual studio 2013\Projects\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\Digimon.Dominio.pdb
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\mscorlib.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\normidna.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\normnfc.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\normnfd.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\normnfkc.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\bin\Debug\normnfkd.nlp
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.dll
+C:\Users\AlunoInfnet\Desktop\GITHUB\.Net\Megidramon\Digimon.Dominio\obj\Debug\Digimon.Dominio.pdb

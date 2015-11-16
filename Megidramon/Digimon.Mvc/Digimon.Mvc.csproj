@@ -128,6 +128,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\FreteController.cs" />
     <Compile Include="Controllers\MotoristaController.cs" />
+    <Compile Include="Controllers\SobreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -188,8 +189,39 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="dist\imagens\barra-azul.jpg" />
+    <Content Include="dist\imagens\bg-digimon.jpg" />
+    <Content Include="dist\imagens\bg-home.jpg" />
+    <Content Include="dist\imagens\bg-logado.jpg" />
+    <Content Include="dist\imagens\btn-amarelo.png" />
+    <Content Include="dist\imagens\btn-azul.png" />
+    <Content Include="dist\imagens\btn-preto.png" />
+    <Content Include="dist\imagens\btn-pretoo.png" />
+    <Content Include="dist\imagens\btn-verde.png" />
+    <Content Include="dist\imagens\estrada.jpg" />
+    <Content Include="dist\imagens\favicon-32x32.png" />
+    <Content Include="dist\imagens\icone-pass.png" />
+    <Content Include="dist\imagens\icone-user.png" />
+    <Content Include="dist\imagens\iconeLogin.png" />
+    <Content Include="dist\imagens\iconeMenu.png" />
+    <Content Include="dist\imagens\logo.png" />
+    <Content Include="dist\imagens\logogrande.png" />
+    <Content Include="dist\imagens\logologin.png" />
+    <Content Include="dist\imagens\logoo.png" />
+    <Content Include="dist\imagens\lupa.png" />
+    <Content Include="dist\imagens\seta.png" />
+    <Content Include="dist\imagens\setad.png" />
+    <Content Include="dist\imagens\setadireita.png" />
+    <Content Include="dist\imagens\setap.png" />
+    <Content Include="dist\imagens\teste.png" />
+    <Content Include="dist\imagens\uye.png" />
+    <Content Include="dist\js\jquery-1.11.3.js" />
+    <Content Include="dist\js\novo.js" />
+    <Content Include="dist\js\novocpqs.js" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="dist\imagens\bg-digimon.rar" />
+    <Content Include="dist\imagens\Thumbs.db" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -222,6 +254,9 @@
     <Content Include="Views\Motorista\Alterar.cshtml" />
     <Content Include="Views\Motorista\Detalhes.cshtml" />
     <Content Include="Views\Frete\ui006cadastrarfrete.cshtml" />
+    <Content Include="Views\Shared\_OFFLayout.cshtml" />
+    <Content Include="Views\Sobre\ui033faq.cshtml" />
+    <Content Include="Views\Sobre\ui034faleconosco.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
