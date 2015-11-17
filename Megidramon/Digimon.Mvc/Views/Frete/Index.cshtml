@@ -1,0 +1,171 @@
+﻿@model IEnumerable<Digimon.Dominio.Frete>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar Frete", "ui006cadastrarfrete")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdFrete)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cnh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataSaida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rtnrc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoCarga)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remetente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Destinatario)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.RLogradouro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RNumero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RComplemento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RCep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RBairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RCidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RUf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DLogradouro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DNumero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DComplemento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DCep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DBairro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DCidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DUf)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdFrete)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cnh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataSaida)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rtnrc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoCarga)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remetente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Destinatario)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.RLogradouro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RNumero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RComplemento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RCep)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RBairro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RCidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RUf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DLogradouro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DNumero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DComplemento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DCep)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DBairro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DCidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DUf)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

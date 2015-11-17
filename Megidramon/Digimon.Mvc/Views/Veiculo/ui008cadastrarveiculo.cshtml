@@ -1,0 +1,118 @@
+﻿@model Digimon.Dominio.Veiculo
+@{
+    ViewBag.Title = "ui008cadastrarveiculo";
+}
+<h2>ui008cadastrarveiculo</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Dados Veículo</legend>
+        <div class="campo">
+             <label>Transportador</label><br />
+             @Html.DropDownListFor(m =>m.IdTransportador, new SelectList(Model.Transportadores, "IdTransportador", 
+                                                                  "Nome"), "Selecione Transportador")
+        </div>
+        <div class="campo">
+            <label for="placaJ">Placa:</label><br>
+            <input type="text" name="Placa" id="placaJ" class="campoObrig" size="15" maxlength="8"><span id="x_placaJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="cidadeveicJ">Cidade do Veículo:</label><br>
+            <input type="text" name="Cidade" id="cidadeveicJ" class="campoObrig" size="22" maxlength="50"><span id="x_cidadeveicJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="UF">UF</label><br>
+            <select id="ufveicJ" name="UF" class="campoObrig">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ" selected>RJ</option>
+                <option value="RN">RN</option>
+                <option value="RO">RO</option>
+                <option value="RS">RS</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+                <option value="TO">TO</option>
+            </select><span id="x_ufveicJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="renavamJ">Renavam:</label><br>
+            <input type="text" name="Renavam" id="renavamJ" class="campoObrig" size="17" maxlength="9"><span id="x_renavamJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="tipoJ">Tipo:</label><br>
+            <select id="tipoJ" name="Tipo" class="campoObrig">
+                <option value="CL">Caminhão Leve</option>
+                <option value="CS">Caminhão Simples</option>
+                <option value="CT">Caminhão Trator</option>
+                <option value="CTE">Caminhão Trator Especial</option>
+                <option value="CF">Caminhonete/Furgão</option>
+                <option value="RB">Reboque</option>
+                <option value="SRB">Semi-Reboque</option>
+                <option value="SRB5">Semi-Reboque com 5º Roda / BITREM</option>
+                <option value="SRBE">Semi-Reboque Especial</option>
+                <option value="UL">Utilitário Leve</option>
+                <option value="VA">Veículo Operacional de Apoio</option>
+            </select><span id="x_tipoJ" class="tSpan"></span>
+        </div>
+
+
+        <div class="campo">
+            <label for="modeloJ">Modelo:</label><br>
+            <input type="text" name="Modelo" id="modeloJ" size="15" class="campoObrig" maxlength="20"><span id="x_modeloJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="marcaJ">Marca:</label><br>
+            <input type="text" name="Marca" id="marcaJ" class="campoObrig" size="16" maxlength="20"><span id="x_marcaJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="anoDeFabricJ">Ano de Fabricação:</label><br>
+            <input type="text" name="AnoDeFabrica" id="anoDeFabricJ" maxlength="4" size="10" class="campoObrig"><span id="x_anoDeFabric" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="numEixosJ">Numero de Eixos:</label><br>
+            <input type="text" name="NumEixos" id="numEixosJ" size="9" class="campoObrig"><span id="x_numEixosJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="taraJ">Tara:</label><br>
+            <input type="text" name="Tara" id="taraJ" size="9" maxlength="5" class="campoObrig"><span id="x_taraJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="cmtJ">CMT:</label><br>
+            <input type="text" name="CMT" id="cmtJ" size="9" maxlength="5" class="campoObrig"><span id="x_cmtJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="pbtpbtcJ">PBT/PBTC:</label><br>
+            <input type="text" name="PBT" id="pbtpbtcJ" size="11" class="campoObrig"><span id="x_pbtpbtcJ" class="tSpan"></span>
+        </div>
+    </fieldset>
+					
+					
+					
+    <div class="botoes" id="botoes">
+        <input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
+        <input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
+    </div>
+    }
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
