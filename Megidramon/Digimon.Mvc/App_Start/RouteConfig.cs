@@ -16,7 +16,7 @@ namespace Digimon.Mvc
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Veiculo", action = "ui008cadastrarveiculo", id = UrlParameter.Optional }
+                defaults: new { controller = "Usuario", action = "ui012cadastrarusuario", id = UrlParameter.Optional }
             );
         }
     }

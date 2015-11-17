@@ -18,7 +18,7 @@ namespace Digimon.Aplicacao
             strQuery += string.Format("DECLARE @IdMotorista int SET @IdMotorista = (SELECT IDMOTORISTA FROM MOTORISTA WHERE CNH = '{0}') ", frete.Cnh);
             strQuery += string.Format("DECLARE @IdTransportador int SET @IdTransportador = (SELECT IDTRANSPORTADOR FROM TRANSPORTADOR WHERE RNTRC = '{0}') ",
                     frete.Rtnrc);
-            strQuery += string.Format("DECLARE @IdVeiculo int SET @IdVeiculo = (SELECT IDVEICULO FROM VEICULO WHERE PLACA = '{0}') ",
+            strQuery += string.Format( "DECLARE @IdVeiculo int SET @IdVeiculo = (SELECT IDVEICULO FROM VEICULO WHERE PLACA = '{0}') ",
                     frete.Placa);
             strQuery += "INSERT INTO FRETE (IDMOTORISTA, IDTRANSPORTADOR, IDVEICULO,  TIPO, DATASAIDA, DATAENTREGA) ";
             strQuery += string.Format("VALUES (@IdMotorista, @IdTransportador, @IdVeiculo, '{0}', '{1}', '{2}') ",
@@ -107,13 +107,13 @@ namespace Digimon.Aplicacao
         {
             using (contexto = new Contexto())
             {
-                var strQuery = "" +
-                "SELECT C.IDFRETE, C.IDCARGA, C.TIPO AS TIPO_CARGA, C.REMETENTE, " +
-                "O.LOGRADOURO AS RUAO, O.NUMERO AS NUMEROO, O.CEP AS CEPO, O.COMPLEMENTO AS COMPLEMENTOO, O.BAIRRO AS BAIRROO, O.CIDADE AS CIDADEO," +
-                " O.UF AS UFO, C.DESTINATARIO," +
-                " D.LOGRADOURO AS RUAD, D.NUMERO AS NUMEROD, D.CEP AS CEPD, D.COMPLEMENTO AS COMPLEMENTOD, D.BAIRRO AS BAIRROD, D.CIDADE AS CIDADED," +
+                var strQuery = ""+
+                "SELECT C.IDFRETE, C.IDCARGA, C.TIPO AS TIPO_CARGA, C.REMETENTE, "+
+                "O.LOGRADOURO AS RUAO, O.NUMERO AS NUMEROO, O.CEP AS CEPO, O.COMPLEMENTO AS COMPLEMENTOO, O.BAIRRO AS BAIRROO, O.CIDADE AS CIDADEO,"+
+                " O.UF AS UFO, C.DESTINATARIO,"+
+                " D.LOGRADOURO AS RUAD, D.NUMERO AS NUMEROD, D.CEP AS CEPD, D.COMPLEMENTO AS COMPLEMENTOD, D.BAIRRO AS BAIRROD, D.CIDADE AS CIDADED,"+
                 "D.UF AS UFD FROM CARGA C INNER JOIN ENDERECO O ON C.ORIGEM=O.IDENDERECO INNER JOIN ENDERECO D ON C.DESTINO=D.IDENDERECO";
-
+                
                 var retorno = contexto.ExecutaLeitura(strQuery);
                 return ListarObjeto(retorno);
             }
@@ -149,13 +149,13 @@ namespace Digimon.Aplicacao
                     //  TipoCarga  = reader["TIPOCARGA"].ToString(),
                     //  Remetente = reader["REMETENTE"].ToString(),
                     //  Destinatario  = reader["DESTINATARIO"].ToString(),
-                    RLogradouro = reader["RUAO"].ToString(),
-                    RNumero = reader["NUMEROO"].ToString(),
-                    RComplemento = reader["COMPLEMENTOO"].ToString(),
-                    RCep = reader["CEPO"].ToString(),
-                    RBairro = reader["BAIRROO"].ToString(),
-                    RCidade = reader["CIDADEO"].ToString(),
-                    RUf = reader["UFO"].ToString(),
+                      RLogradouro  = reader["RUAO"].ToString(),
+                      RNumero  = reader["NUMEROO"].ToString(),
+                      RComplemento  = reader["COMPLEMENTOO"].ToString(),
+                      RCep  = reader["CEPO"].ToString(),
+                      RBairro  = reader["BAIRROO"].ToString(),
+                      RCidade  = reader["CIDADEO"].ToString(),
+                      RUf = reader["UFO"].ToString(),
                     DLogradouro = reader["RUAD"].ToString(),
                     DNumero = reader["NUMEROD"].ToString(),
                     DComplemento = reader["COMPLEMENTOD"].ToString(),

@@ -27,13 +27,10 @@ namespace Digimon.Aplicacao
                 transportador.Logradouro, transportador.Numero, transportador.Complemento, transportador.Cep,
                 transportador.Bairro, transportador.Cidade, transportador.Uf);
             strQuery += "DECLARE @IdEndereco int SET @IdEndereco = (SELECT IDENT_CURRENT('ENDERECO')) ";
-            strQuery +=
-                "INSERT INTO PESSOAFISICA (IDCONTATO, IDENDERECO, NOME, CPF, DATANASCIMENTO, RG, UF_PF, ORGAOEMISSOR, SEXO) ";
-            strQuery += string.Format(
-                "VALUES (@IdContato, @IdEndereco,  '{0}', '{1}', '{2}','{3}','{4}','{5}','{6}') ", transportador.Nome,
-                transportador.CPF, transportador.DataNascimento, transportador.RG, transportador.UF_PF,
-                transportador.OrgaoEmissor, transportador.Sexo);
-            strQuery += "DECLARE @IdPessoaJ int SET @IdPessoaJ = (SELECT IDENT_CURRENT('PESSOAJURIDICA')) ";
+            strQuery += "INSERT INTO PESSOAFISICA (IDCONTATO, IDENDERECO, NOME, CPF, DATANASCIMENTO, RG, UF_PF, ORGAOEMISSOR, SEXO) ";
+            strQuery += string.Format("VALUES (@IdContato, @IdEndereco,  '{0}', '{1}', '{2}','{3}','{4}','{5}','{6}') ", transportador.Nome,
+                transportador.CPF, transportador.DataNascimento, transportador.RG, transportador.UF_PF, transportador.OrgaoEmissor, transportador.Sexo);
+            strQuery += "DECLARE @IdPessoaF int SET @IdPessoaF = (SELECT IDENT_CURRENT('PESSOAJU')) ";
             strQuery += " UPDATE ACESSO SET IDPESSOA = @IdPessoaJ WHERE IDACESSO = @IdAcesso ";
             strQuery += "INSERT INTO TRANSPORTADOR (IDPESSOA,IDENDERECO, RNTRC, TIPOPESSOA) ";
             strQuery += string.Format("VALUES (@IdPessoaJ, @IdEndereco, '{0}', 'J') ", transportador.Rtnrc);
@@ -43,15 +40,11 @@ namespace Digimon.Aplicacao
                 contexto.ExecutaGravacao(strQuery);
             }
         }
-
         public void Desativar(string Cnh)
         {
             var strQuery = "";
             strQuery += string.Format("UPDATE MOTORISTA SET SITUACAO = 1 WHERE CNH = '{0}'", Cnh);
-            strQuery +=
-                string.Format(
-                    "DECLARE @IdPessoaFisica int SET @IdPessoaFisica = (SELECT IDPESSOAFISICA FROM MOTORISTA WHERE CNH = '{0}')",
-                    Cnh);
+            strQuery += string.Format("DECLARE @IdPessoaFisica int SET @IdPessoaFisica = (SELECT IDPESSOAFISICA FROM MOTORISTA WHERE CNH = '{0}')", Cnh);
             strQuery += "UPDATE PESSOAFISICA SET SITUACAO = 1 WHERE IDPESSOAFISICA = @IdPessoaFisica";
 
             using (contexto = new Contexto())
@@ -59,33 +52,17 @@ namespace Digimon.Aplicacao
                 contexto.ExecutaGravacao(strQuery);
             }
         }
-
         public List<TransportadorAutonomo> ListarTodos()
         {
             using (contexto = new Contexto())
             {
-                var strQuery =
-                    "SELECT *, ACESSO.TIPOPESSOA AS TIPOPESSOA_USER FROM TRANSPORTADOR INNER JOIN ENDERECO ON TRANSPORTADOR.IDENDERECO = ENDERECO.IDENDERECO INNER JOIN PESSOAFISICA" +
-                    "ON TRANSPORTADOR.IDPESSOA = PESSOAJURIDICA.IDPESSOAFISICA INNER JOIN CONTATO ON  PESSOAFISICA.IDCONTATO = CONTATO.IDCONTATO " +
-                    "INNER JOIN ACESSO ON PESSOAFISICA.IDPESSOAFISICA = ACESSO.IDPESSOA";
+                var strQuery = "SELECT *, ACESSO.TIPOPESSOA AS TIPOPESSOA_USER FROM TRANSPORTADOR INNER JOIN ENDERECO ON TRANSPORTADOR.IDENDERECO = ENDERECO.IDENDERECO INNER JOIN PESSOAFISICA" +
+                "ON TRANSPORTADOR.IDPESSOA = PESSOAJURIDICA.IDPESSOAFISICA INNER JOIN CONTATO ON  PESSOAFISICA.IDCONTATO = CONTATO.IDCONTATO " +
+                "INNER JOIN ACESSO ON PESSOAFISICA.IDPESSOAFISICA = ACESSO.IDPESSOA";
                 var retorno = contexto.ExecutaLeitura(strQuery);
                 return ListarObjeto(retorno);
             }
         }
-
-        //public Motorista ListarMotorista(int idMotorista)
-        //{
-
-        //    using (contexto = new Contexto())
-        //    {
-        //        var strQuery = "SELECT * FROM MOTORISTA INNER JOIN PESSOAFISICA ON MOTORISTA.IDMOTORISTA = PESSOAFISICA.IDPESSOAFISICA INNER JOIN ENDERECO ON MOTORISTA.IDMOTORISTA = ENDERECO.IDENDERECO " +
-        //            "INNER JOIN CONTATO ON MOTORISTA.IDMOTORISTA = CONTATO.IDCONTATO ";
-        //        strQuery += string.Format("WHERE IDMOTORISTA = '{0}'", idMotorista);
-        //        var retorno = contexto.ExecutaLeitura(strQuery);
-        //        return ListarObjeto(retorno).FirstOrDefault();
-        //    }
-        //}
-
         private List<TransportadorAutonomo> ListarObjeto(SqlDataReader reader)
         {
             var transportadores = new List<TransportadorAutonomo>();
@@ -129,7 +106,6 @@ namespace Digimon.Aplicacao
             reader.Close();
             reader.Dispose();
             return transportadores;
-
         }
     }
 }

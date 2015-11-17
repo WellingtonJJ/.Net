@@ -131,6 +131,7 @@
     <Compile Include="Controllers\SobreController.cs" />
     <Compile Include="Controllers\TransportadorAutoController.cs" />
     <Compile Include="Controllers\TransportadorEmpController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Controllers\VeiculoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -262,8 +263,8 @@
     <Content Include="Views\Sobre\ui034faleconosco.cshtml" />
     <Content Include="Views\Frete\Index.cshtml" />
     <Content Include="Views\Veiculo\ui008cadastrarveiculo.cshtml" />
-    <Content Include="Views\TransportadorEmp\Index.cshtml" />
-    <Content Include="Views\TransportadorEmp\CadastrarTransportadorEmp.cshtml" />
+    <Content Include="Views\TransportadorEmp\ui010cadastrartransportador.cshtml" />
+    <Content Include="Views\Usuario\ui012cadastrarusuario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

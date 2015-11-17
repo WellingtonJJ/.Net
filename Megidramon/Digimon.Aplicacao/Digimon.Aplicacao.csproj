@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TransportadorAutoAplicacao.cs" />
     <Compile Include="TransportadorEmpAplicacao.cs" />
+    <Compile Include="UsuarioAplicacao.cs" />
     <Compile Include="VeiculoAplicacao.cs" />
   </ItemGroup>
   <ItemGroup>

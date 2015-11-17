@@ -29,16 +29,16 @@ namespace Digimon.Mvc.Controllers
             return View();
         }
 
-        public ActionResult AlterarTransportador()
-        {
-            TransportadorAutoAplicacao transpordor = new TransportadorAutoAplicacao();
-            var listaDeTransportadores = transpordor.ListarTodos();
-            return View(transpordor);
-        }
-        [HttpPost]
-        public ActionResult AlterarTransportador()
-        {
-            return View();
-        }
-        }
+        /*  public ActionResult AlterarTransportador()
+          {
+              TransportadorAutoAplicacao transpordor = new TransportadorAutoAplicacao();
+              var listaDeTransportadores = transpordor.ListarTodos();
+              return View(transpordor);
+          }
+          [HttpPost]
+          public ActionResult AlterarTransportador()
+          {
+              return View();
+          }*/
+    }
 }
