@@ -23,47 +23,47 @@ namespace Digimon.Mvc.Controllers
         public ActionResult CadastrarTransportadorEmp()
         {
             /*
-            HttpCookie cookie = new HttpCookie("Usuario");
-            cookie.Value = "";
-            Response.Cookies.Add(cookie);
-            var permissao = Request.Cookies["Usuario"].Value;
+                var idusuario = Request.Cookies["userId"].Value;
+                var permissao = Request.Cookies["permissao"].Value;
 
-            if (string.IsNullOrEmpty(permissao))
-            {	//USUARIO NAO ESTÀ LOGADO
-                Response.Redirect("http://g1.globo.com/index.html");
-            }
-
-            if (!String.IsNullOrEmpty(permissao))
-            {
-                if ((permissao != "3") && (permissao != "5") && (permissao != "6"))
-                {  // USUARIO NAO TEM PERMISSAO PARA ACESSAR ESTA PAGINA
-                    Response.Redirect("https://www.google.com.br/webhp?hl=pt-BR");
+                if (string.IsNullOrEmpty(idusuario))
+                {
+                    Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
                 }
-            }*/
+
+                if (!String.IsNullOrEmpty(permissao))
+                {
+                    if ((permissao != "3") && (permissao != "1"))
+                    {
+                        Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                    }
+                }
+             * 
+             * */
             return View();
         }
 
         [HttpPost]
         public ActionResult CadastrarTransportadorEmp(TransportadorEmpresa transportador)
         {
+            /*
+            var idusuario = Request.Cookies["userId"].Value;
+            var permissao = Request.Cookies["permissao"].Value;
 
-            /* HttpCookie cookie = new HttpCookie("Usuario");
-             cookie.Value = "";
-             Response.Cookies.Add(cookie);
-             var permissao = Request.Cookies["Usuario"].Value;
+            if (string.IsNullOrEmpty(idusuario))
+            {
+                Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+            }
 
-             if (string.IsNullOrEmpty(permissao))
-             {	//USUARIO NAO ESTÀ LOGADO
-                 Response.Redirect("http://g1.globo.com/index.html");
-             }
-
-             if (!String.IsNullOrEmpty(permissao))
-             {
-                 if ((permissao != "3") && (permissao != "5") && (permissao != "6"))
-                 {  // USUARIO NAO TEM PERMISSAO PARA ACESSAR ESTA PAGINA
-                     Response.Redirect("https://www.google.com.br/webhp?hl=pt-BR");
-                 }
-             } */
+            if (!String.IsNullOrEmpty(permissao))
+            {
+                if ((permissao != "3") && (permissao != "1"))
+                {
+                    Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                }
+            }
+             * 
+             * */
 
             if (ModelState.IsValid)
             {
