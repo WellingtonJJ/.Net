@@ -6,7 +6,7 @@ using System;
 
 namespace Digimon.Mvc.Controllers
 {
-    public class MotoristaController : Controller
+    public class motoristaController : Controller
     {
         //
         // GET: /Motorista/

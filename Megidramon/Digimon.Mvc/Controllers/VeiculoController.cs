@@ -8,7 +8,7 @@ using Digimon.Dominio;
 
 namespace Digimon.Mvc.Controllers
 {
-    public class VeiculoController : Controller
+    public class veiculoController : Controller
     {
         //
         // GET: /Veiculo/

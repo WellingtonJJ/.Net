@@ -9,132 +9,115 @@
     @Scripts.Render("~/dist/js/novo.js")
     @Scripts.Render("~/dist/js/novocpqs.js")
 </head>
-<body>
-    <div id="interface">
-        <div id="header">
-            <div class="main">
-                <a href="http://www.projetodigimon.com.br/ui005home.jsp"><img src="../../dist/imagens/logoo.png" class="logo" id="logoo" alt="Logo" /></a>
-                <ul class="menu" id="menu">
-                    <li><a href="http://www.projetodigimon.com.br/ui005home.jsp">Home</a></li>
-                    <li>
-                        <a href="#">Transportador<img src="../../dist/imagens/seta.png" class="seta" alt="Opções de transportador" /></a>
-                        <ul>
-                            <li>
-                                <a href="#">Frete<img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Frete" /></a>
-                                <!--Criação da class submenu-->
-                                <ul class="submenu">
-                                    <li>@Html.ActionLink("Cadastrar Frete","ui006cadastrarfrete","Frete")</li>
-                                    <li>@Html.ActionLink("Consultar Frete","ui007-consultarfrete","Frete")</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Veículo <img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Veículo" /></a>
-                                <ul class="submenu">
-                                    <li>@Html.ActionLink("Cadastrar Veículo","ui008cadastrarveiculo","Veiculo")</li>
-                                    <li>@Html.ActionLink("Consultar Veículo","ui009consultarveiculo","Veiculo")</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Motorista <img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Motorista" /></a>
-                                <ul class="submenu">
-                                    <li>@Html.ActionLink("Cadastrar Motorista","ui020cadastrarmotorista","Motorista")</li>
-                                    <li>@Html.ActionLink("Consultar Motorista","ui021consultarmotorista","Motorista")</li>
-                                </ul>
-                            </li>
+<div id="header">
+    <div class="main">
+        <a href="http://www.projetodigimon.com.br/ui005home.jsp"><img src="dist/imagens/logoo.png" class="logo" id="logoo" alt="Logo"/></a>
+        <ul class="menu" id="menu">
+            <li><a href="http://www.projetodigimon.com.br/ui005home.jsp">Home</a></li>
+            <li><a href="#">Transportador<img src="dist/imagens/seta.png" class="seta" alt="Opções de transportador"/></a>
+                <ul>
+                    <li><a href="#">Frete<img src="dist/imagens/setad.png" class="setad" alt="Opções de Frete"/></a>
+                        <!--Criação da class submenu-->
+                        <ul class="submenu">
+                            <li><a href="http://www2.projetodigimon.com.br/frete/ui006cadastrarfrete">Cadastrar</a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">Antt / Dnit <img src="../../dist/imagens/seta.png" class="seta" alt="Opções de Órgão" /></a>
-                        <ul>
-                            <li>
-                                <a href="#">Posto de Pesagem<img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Posto" /></a>
-                                <ul class="submenu">
-                                    <li><a href="http://www.projetodigimon.com.br/ui018cadastrarposto.jsp">Cadastrar</a></li>
-                                    <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Rodovia <img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Rodovia" /></a>
-                                <ul class="submenu">
-                                    <li><a href="http://www.projetodigimon.com.br/Rodovia/ui014cadastrarrodovia.jsp">Cadastrar </a></li>
-                                    <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Transportador <img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Transportador" /></a>
-                                <ul class="submenu">                                   
-                                    <li>@Html.ActionLink("Cadastrar transportador","ui010cadastrartransportador","Transportador")</li>
-                                    <li>@Html.ActionLink("Consultar transportador","ui011consultartransportador","Transportador")</li>                                      
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Câmera <img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Câmera" /></a>
-                                <ul class="submenu">
-                                    <li><a href="http://www.projetodigimon.com.br/ui026cadastrarcamera.jsp">Cadastrar </a></li>
-                                    <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Balança <img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Balança" /></a>
-                                <ul class="submenu">
-                                    <li><a href="http://www.projetodigimon.com.br/ui016cadastrarbalanca.jsp">Cadastrar </a></li>
-                                    <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
-                                </ul>
-                            </li>
+                    <li><a href="#">Veículo <img src="dist/imagens/setad.png" class="setad" alt="Opções de Veículo"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www2.projetodigimon.com.br/veiculo/ui008cadastrarveiculo">Cadastrar</a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
+
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">Posto de Pesagem <img src="../../dist/imagens/seta.png" class="seta" alt="Opções de Pesagem" /></a>
-                        <ul>
-                            <li>
-                                <a href="#">Pesagem <img src="../../dist/imagens/setad.png" class="setad" alt="Opções de Pesagem" /></a>
-                                <ul class="submenu">
-                                    <li><a href="http://www.projetodigimon.com.br/Pesagem/ui024cadastrarpesagem.jsp">Registrar </a></li>
-                                    <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
-                                </ul>
-                            </li>
+                    <li><a href="#">Motorista <img src="dist/imagens/setad.png" class="setad" alt="Opções de Motorista"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www2.projetodigimon.com.br/motorista/ui020cadastrarmotorista">Cadastrar</a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">Relatório <img src="../../dist/imagens/seta.png" class="seta" alt="Opções de Relatório" /></a>
-                        <ul>
-                            <li>@Html.ActionLink("Emitir Relatório","ui030relatorio","Relatorio")</li>               
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Usuário<img src="../../dist/imagens/seta.png" class="seta" alt="Opções de Usuário" /></a>
-                        <ul>
-                            <li>@Html.ActionLink("Cadastrar Usuário","ui012cadastrarusuario","Usuario")</li>
-                            <li>@Html.ActionLink("Consultar Usuário","ui013consultarusuario","Usuario")</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Ajuda<img src="../../dist/imagens/seta.png" class="seta" alt="Opções de Ajuda" /></a>
-                        <ul>
-                            <li>@Html.ActionLink("Fale Conosco","ui034faleconosco","Sobre")</li>
-                            <li>@Html.ActionLink("FAQ","ui033faq","Sobre")</li>
-                        </ul>
-                    </li>
-                    <!--Aqui tem uma ul diferente-->
-                    <li>
-                        <img src="../../dist/imagens/iconeMenu.png" class="iconeMenu" alt="Menu do Usuário" />
-                        <ul id="last">
-                            <li>@Html.ActionLink("Minha Conta","ui032minhaconta","Conta")</li>
-                            <li><a href="#">Sair</a></li>
-                        </ul>
-                        <!--aqui termina a ul do botao sair e minha conta-->
                     </li>
                 </ul>
-            </div>
-            <div id="darkBox"></div>
-        </div><!-- Fim da div header -->
+            </li>
+            <li><a href="#">ANTT / DNIT <img src="dist/imagens/seta.png" class="seta" alt="Opções de Órgão"/></a>
+                <ul>
+                    <li><a href="#">Posto de Pesagem<img src="dist/imagens/setad.png" class="setad" alt="Opções de Posto"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www.projetodigimon.com.br/ui018cadastrarposto.jsp">Cadastrar</a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
 
-        <div id="main">
-            <div class="centro">
+                        </ul>
+                    </li>
+                    <li><a href="#">Rodovia <img src="dist/imagens/setad.png" class="setad" alt="Opções de Rodovia"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www.projetodigimon.com.br/ui014cadastrarrodovia.jsp">Cadastrar </a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Transportador <img src="dist/imagens/setad.png" class="setad" alt="Opções de Transportador"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www2.projetodigimon.com.br/transportadoremp/ui010cadastrartransportador">Cadastrar </a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Câmera <img src="dist/imagens/setad.png" class="setad" alt="Opções de Câmera"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www.projetodigimon.com.br/ui026cadastrarcamera.jsp">Cadastrar </a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Balança <img src="dist/imagens/setad.png" class="setad" alt="Opções de Balança"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www.projetodigimon.com.br/ui016cadastrarbalanca.jsp">Cadastrar</a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Posto de Pesagem <img src="dist/imagens/seta.png" class="seta" alt="Opções de Pesagem"/></a>
+                <ul>
+                    <li><a href="#">Pesagem <img src="dist/imagens/setad.png" class="setad" alt="Opções de Pesagem"/></a>
+                        <ul class="submenu">
+                            <li><a href="http://www.projetodigimon.com.br/ui024cadastrarpesagem.jsp">Registrar </a></li>
+                            <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li> 
+            <li><a href="#">Relatório <img src="dist/imagens/seta.png" class="seta" alt="Opções de Relatório"/></a>
+                <ul>
+                    <li><a href="http://www2.projetodigimon.com.br/relatorio/ui030relatorio">Emitir</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Usuário<img src="dist/imagens/seta.png" class="seta" alt="Opções de Usuário"/></a>
+                <ul>
+                    <li><a href="http://www2.projetodigimon.com.br/usuario/ui012cadastrarusuario">Cadastrar</a></li>
+                    <li><a href="http://www.projetodigimon.com.br/ui029pesquisa.jsp">Consultar</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">Ajuda<img src="dist/imagens/seta.png" class="seta" alt="Opções de Ajuda"/></a>
+                <ul class="penultimo">
+                   <li><a href="http://www2.projetodigimon.com.br/sobre/ui034faleconosco">Fale Conosco</a></li>
+                    <li><a href="http://www2.projetodigimon.com.br/sobre/ui033faq">FAQ</a></li>
+                </ul>
+            </li>
+            <!--Aqui tem uma ul diferente-->
+            <li class="last"><img src="dist/imagens/iconeMenu.png" class="iconeMenu" alt="Menu do Usuário"/>
+                <ul class="last">
+                    <li><a href="http://www2.projetodigimon.com.br/conta/ui032minhaconta">Minha Conta</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+                <!--aqui termina a ul do botao sair e minha conta-->
+            </li>
+        </ul>
+    </div>
+    <div id="darkBox"></div>
+</div>
+<div class="erroForm">
+</div>
 
                 @RenderBody()
 
-            </div><!--Fim div centro-->
+            
             <div id="clear"></div><!--Fim div clear-->
         </div><!--Fim div main conteúdo-->
         <div id="rodape">

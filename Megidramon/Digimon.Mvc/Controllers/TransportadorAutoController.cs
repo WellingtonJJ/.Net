@@ -8,7 +8,7 @@ using Digimon.Aplicacao;
 
 namespace Digimon.Mvc.Controllers
 {
-    public class TransportadorAutoController : Controller
+    public class transportadorautoController : Controller
     {
         //
         // GET: /TransportadorAuto/

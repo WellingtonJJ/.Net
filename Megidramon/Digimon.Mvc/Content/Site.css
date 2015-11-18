@@ -1,53 +1,261 @@
 ﻿@charset "UTF-8";
 
 html {
-	background: url(../imagens/bg-logado.jpg) no-repeat center center fixed;  /*imagem fixada no centro e sem repetição */
-	-webkit-background-size: cover; /*regra para a imagem ocupar toda a extensão dá página em diferentes navegadores */
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    background: url(../imagens/bg-logado.jpg) no-repeat center center fixed;  /*imagem fixada no centro e sem repetição */
+    -webkit-background-size: cover; /*regra para a imagem ocupar toda a extensão dá página em diferentes navegadores */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.home, .contato{
+    overflow-y:hidden;
 }
 
-.teste {
-    color: #ffffff;
-    margin: 15px;
+.outsideSystem .menu{
+    font-size:19px;
+}
+
+.erroForm {
+    background-color: rgba(255,0,0,0.6);
+    height: auto;
+    padding: 13px;
+    border-radius: 2px 2px 22px 22px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+ul li ul li {
+    background-color: #080e1c;
 }
 
 #titlePag{
     display:none;
 }
 
+.home a{
+    text-decoration:none ;
+    color:#FFF;
+}
+
 
 html, body{
-	height: 100%;
+    height: 100%;
     font-family: "wf_segoe-ui_normal", "Arial", sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: normal;
 }
-
-.sobre {
-	
-    width: 744px;
-    height: 272px;
-    margin-left: 0px;
-    text-align: justify;
-    overflow: hidden;
-    background: #000 none repeat scroll 0% 0%;
-    float: left;
-    padding-right: 310px;
-    padding-left: 27px;
-    padding-top: 23px;
-    opacity: 0.7;
+/* ----- Inicio da tela sobre ----*/
+.sobre #footer {
+   background-color: rgba(0,0,0,0.8);  
+   padding: 26px 0 26px 0;
+   margin:0;
 }
+/*.sobre #header .main {
+   background-color: #000;  
+}*/
+
+.sobre #main{
+    padding-top: 27px;
+}
+.home .menu, .login .menu, .contato .menu{
+    margin-right: 9px;
+}
+
+.sobre .centro h1{
+    padding-top:60px;
+}
+
+.sobre .centro a{
+    text-decoration: none;
+    color:#FFF;
+}
+
+.sobre .centro{
+    background-color: rgba(0,0,0,0.8); 
+    margin-top:80px;
+    margin-bottom:-18px;
+    padding-bottom: 40px;
+}
+
+.sobre #carrossel{
+    width: 650px;
+    margin:0 auto;
+}
+
+.sobre .fundo{
+    margin:0 auto;
+    min-width:100%;
+    
+}
+/*.sobre img{
+    height: 400px;
+}*/
+
+.sobre p{
+    padding-left:40px;
+    padding-right:40px;
+    text-indent: 30px;
+    text-align: justify;
+    font-size:19px;
+    margin-bottom: 30px;
+}
+
+.img-circle {
+  -webkit-border-radius: 500px;
+     -moz-border-radius: 500px;
+          border-radius: 500px;
+}
+#fotosTime{
+    margin:0 auto;
+}
+#fotosTime tr td{
+    padding:20px;
+}
+.timeFoto{
+  width: 110px;
+  height: 110px !important;
+
+}
+
+/*SLIDE TELA SOBRE*/
+.carousel-caption h4,
+.carousel-caption p {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+}
+
+.carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-control:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+     -moz-transition: 0.6s ease-in-out left;
+       -o-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+
+.carousel .active {
+  left: 0;
+}
+
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel .next {
+  left: 100%;
+}
+
+.carousel .prev {
+  left: -100%;
+}
+
+.carousel .next.left,
+.carousel .prev.right {
+  left: 0;
+}
+
+.carousel .active.left {
+  left: -100%;
+}
+
+.carousel .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/*FIM SLIDE TELA SOBRE*/
+
+/* =========== fim da tela sobre =============*/
 
 /*TODO O Conteudo*/
 
 #interface {
-	min-height: 100%;
-	position: relative;
-	margin-left:-8px;
-	margin-right:-8px;
+    min-height: 100%;
+    position: relative;
+    margin-left:-8px;
+    margin-right:-8px;
 }
 
 .seta {
@@ -63,37 +271,59 @@ html, body{
     height: 6px;
     margin-top: 10px;
     color: #C1C0C0;
-	float:right;
+    float:right;
 }
 
 * html #interface {
-	height: 100%; /* hack para IE6 que trata height como min-height */
+    height: 100%; /* hack para IE6 que trata height como min-height */
 }
 
 /*BARRA Superior*/
 #header {
-	height: 70px;
-	background-color: #080e1c;/*altura e cor da barra superior */
-	width: 100%;
-	margin-top:-8px;
-	position: fixed;
-	z-index: 99999;
-	color:white;
-	box-shadow: 0px 6px 8px #7C7F80;
+    height: 70px;
+    background-color: #080e1c;/*altura e cor da barra superior */
+    width: 100%;
+    margin-top:-8px;
+    position: fixed;
+    z-index: 99999;
+    color:white;
+    box-shadow: 0px 6px 8px #7C7F80;
+}
+
+.cad-tac #header, .sobre #header, .contato #header{
+    background-color: #080e1c !important;/*altura e cor da barra superior */
+}
+
+.cad-tac form#formularioJ {
+    background:  rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%;
+    padding: 35px 35px 0px 35px;
+}
+
+.cad-tac #main h1{
+    margin-top: 75px;
 }
 
 /*FIM BARRA SUPERIOR*/
 
 /*CONTEUDO CENTRAL*/
 #main{
-	padding-top:70px;
-	padding-bottom:80px;
-	width:1080px;
-	height:100%;
-	margin:0 auto;
-	position:relative;
-	margin-bottom:0;
-	color:#3E3C3C;
+    padding-top:45px;
+    padding-bottom:80px;
+    width:1080px;
+    height:100%;
+    margin:0 auto;
+    position:relative;
+    margin-bottom:0;
+    color:#3E3C3C;
+}
+
+.contato #main {
+    padding-top: 110px;
+}
+
+.contato legend{
+    font-size: 33px;
+    font-weight: bold;
 }
 element.style {
     margin-top: 17px;
@@ -102,7 +332,17 @@ element.style {
 #main h1 {
     text-align: center;
     font-size: 35px;
-    margin-top: 22px;
+    margin-top: 35px;
+}
+
+#main h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+}
+
+.bemVindo h1{
+    margin-top:25%;
 }
 
 
@@ -110,52 +350,62 @@ element.style {
 
 /*-------------------------------------ANTES DE ESTAR LOGADO--------------------------------------------*/
 .initial {
-	background: url(../imagens/bg-home.jpg) center center fixed;  /*imagem fixada no centro e sem repetição */
-	-webkit-background-size: cover; /*regra para a imagem ocupar toda a extensão dá página em diferentes navegadores */
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-        color:#FFF;
+    background: url(../imagens/bg-home.jpg) center center fixed;  /*imagem fixada no centro e sem repetição */
+    -webkit-background-size: cover; /*regra para a imagem ocupar toda a extensão dá página em diferentes navegadores */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#FFF;
 }
 .initial #main{
     color:#FFF;
 }
 
+.redirect #main {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.redirect p {
+    line-height: 24px;
+    font-size: 18px;
+}
+
 .initial #header{
-	background:none;
-	box-shadow:none;
+    background:none;
+    box-shadow:none;
 }
 .initial #rodape{
-	background:none;
+    background:none;
 }
 .initial #rodape .main{
-	border-top:1px solid #FFF;
+    border-top:1px solid #FFF;
 }
 
 .initial .menu{
-	margin-top:20px;
+    margin-top:20px;
 }
 
 .initial .menu li{
-	background:none;
-	padding-bottom:0;
-	padding-top:0;
-	border-right:1px solid #FFF;
-	height:30px;
-	line-height:35px;
+    background:none;
+    padding-bottom:0;
+    padding-top:0;
+    border-right:1px solid #FFF;
+    height:30px;
+    line-height:35px;
 }
 
 .initial .menu li:hover{
-	border-bottom:3px solid  #2F74B5;
+    border-bottom:3px solid  #2F74B5;
 }
 /*-----------------------------------------FIM ANTES DE ESTAR LOGADO-----------------------------------*/
 /*-------------------------------------PAGINA HOME--------------------------------------------*/
 
 
 .home .logo{
-	text-align:center;
-	margin-top:10%;
-	color:#FFF;
+    text-align:center;
+    margin-top:10%;
+    color:#FFF;
 }
 
 .login .logo {
@@ -165,35 +415,41 @@ element.style {
 }
 
 .home p{
-	margin-bottom:60px;
+    margin-bottom:60px;    
 }
 
 .home .saibaMais{
-	border:1px solid #FFF;
-	padding:5px 18px 5px 18px;
-	margin-top:3px;
-	cursor:pointer;
+    border:1px solid #FFF;
+    padding:5px 18px 5px 18px;
+    margin-top:3px;
+    cursor:pointer;
 }
 .home .saibaMais:hover{
-	background:#0071C4;
+    background:#0071C4;
 }
 /*-----------------------------------------FIM PAGINA HOME-----------------------------------*/
 
 /*-----------------------------------------PAGINA LOGIN-----------------------------------*/
+.login {
+    overflow: hidden;
+}
 .login h2{
     text-align: center;
 }
 
-.login #formularioJ{
+.login #formularioJJ{
     margin:0 auto;
     text-align: center;
 }
 
-.login #formularioJ input[type=text], [type=password] {
+.login #formularioJJ input[type=text], [type=password] {
     height: 29px !important;
     width: 279px;
 }
 
+.login .logo-logout, .home .logo-logout {
+    display: none;
+}
 /*
 .insideSystem #formularioJ [type=password] {
     height: 20px;
@@ -202,16 +458,16 @@ element.style {
 */
 
 .login #usuarioJ{
-  background-image:url(../imagens/icone-user.png);
-  background-repeat:no-repeat;
-  background-position: 2px;
-  padding:4px 0 4px 35px;
+    background-image:url(../imagens/icone-user.png);
+    background-repeat:no-repeat;
+    background-position: 2px;
+    padding:4px 0 4px 35px;
 }
 .login #senhaJ{
-  background-image:url(../imagens/icone-pass.png);
-  background-repeat:no-repeat;
-  background-position: 2px;
-  padding:4px 0 4px 35px;
+    background-image:url(../imagens/icone-pass.png);
+    background-repeat:no-repeat;
+    background-position: 2px;
+    padding:4px 0 4px 35px;
 }
 
 .login p{
@@ -219,12 +475,12 @@ element.style {
 }
 
 .login .botoes{
-  width:320px;
-  margin:0px 0px 0px 118px;
+    width:320px;
+    margin:0px 0px 0px 118px;
 }
 
 .login .botoes a{
-	color:white;
+    color:white;
 }
 
 .login .botoes #entrarJ {
@@ -232,15 +488,15 @@ element.style {
     margin-top: -42px;
     background-color: #0367D5;
     margin-right: 4px;
-	color: white;
-	opacity: 0.8;
+    color: white;
+    opacity: 0.8;
 }
 
 .login .botoes #entrarJ:hover {
     float: right;
     margin-top: -42px;
     background-color: #00244D;
-	opacity: 0.9;
+    opacity: 0.9;
 }
 
 .login img.logo {
@@ -254,7 +510,7 @@ element.style {
 }
 
 .initial.login {
-    height: 450px;
+    heigth: 450px;
 }
 
 
@@ -267,14 +523,14 @@ element.style {
 /*------------------------------------Fim da tela de contato-----------------------------------*/
 /*BARRA INFERIOR*/
 #rodape{
-	position:absolute;
-	bottom:0px;
-	height: 70px;
-	background-color: #080e1c;
-	width: 100%;	
-	display:block;
-	margin-bottom:-8px;
-	margin-right:-8px;
+    position:absolute;
+    bottom:0px;
+    height: 70px;
+    background-color: #080e1c;
+    width: 100%;	
+    display:block;
+    margin-bottom:-8px;
+    margin-right:-8px;
 }
 
 #rodape2 {
@@ -285,149 +541,52 @@ element.style {
     width: 100%;
     bottom: -8px;
     color: white;
-	text-align:center;
+    text-align:center;
 }
 
 #rodape .main{
-	width:1080px;
-	margin:0 auto;
+    width:1080px;
+    margin:0 auto;
 }
 
 #footer{
-	text-align:center;
-	margin:25px auto;
-	color:white;
+    text-align:center;
+    margin:25px auto;
+    color:white;
 }
 #clear{
-	clear: both;
+    clear: both;
 }
 /*FIM BARRA INFERIOR*/
 /*TELA PESUISA */
 /* -------------MEXI AQUI-----------*/
-.pesquisa h1{
-	font-size:60px !important;
-	margin-bottom:24px !important;
+.pesquisa .formularioP{
+    display:none;
 }
-.pesquisa .teste{
-	margin:0 auto;
-	width:75%;
-	height:100%;
-	margin-top:11%;
+.pesquisa #formPrincipal{
+    margin-top:20px;
+    margin-left:40%;
+    display:block;
 }
-
-
-
-.pesquisa input#search{
-  width:100%;
-  height: 50px;
-  border: 1px solid #c2c2c2;
-  font-size: 15pt;
-  float: left;
-  color:#3E3C3C;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  margin:0 auto;
-  padding-right:150px;
-  padding-left:10px;
-  background-image:url(../imagens/setap.png);
-  background-repeat:no-repeat;
-  background-position:745px;
- 
+.pesquisa .formularioP{
+    width:674px;
+    height:100%;
+    margin:0 197px auto;
+    text-transform: none;
+    font-size:13px;
 }
-#selecionar{
-	height:48px;
-	cursor:pointer;
-	position:absolute;
-	top:286px;
-	right:189px;
-	margin-right:-3px;
+.pesquisa .formularioP input{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    font-size: 16px;
+    padding: 4px;
+    height:21px;
 }
-
-
-.pesquisa button.icon{
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
- 
-  border:1px solid #c2c2c2;
-  background: #c2c2c2;
-  height: 50px;
-  width: 50px;
-  color: #4f5b66;
-  font-size: 10pt;
-  margin-left: -51px;
-  background-image:url("../imagens/lupa.png");
-  background-repeat:no-repeat;
-  background-position:10px;
-  cursor:pointer;
-}
-.pesquisa .opcao{
-	top:286px;
-	right:189px;
-	background:#FFF;
-	border:none;
-	border-left:1px solid #c2c2c2;
-	height:48px;
-	padding-right:15px;
-	cursor:pointer;
-	margin-right:12px;
-}
-
-
-
-.pesquisa button.icon:hover{
-	background: #B3B9B8;
-	background-image:url("../imagens/lupa.png");
-	background-repeat:no-repeat;
-	 background-position:10px;
-}
-
-.janelaFormulario{
-	background:#FFF;
-	display:none;
-	min-width:300px;
-
-	float:right;
-	margin-right:185px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-
-#janelaPrincipal{
-	width:100%;
-	height:100%;
-	background:red;
-}
-
-.fechar{
-	padding:5px 10px;
-	border:1px solid #ccc;
-	border-radius:7px;
-	color:#ccc;
-	cursor:pointer;
-	width:19px;
-	float:right;
-}
-.pesquisa fieldset{
-	margin-top:14px;
-}
-.pesquisa legend{
-	min-width:25px;
-}
-
-.fechar:hover{
-	color:#666;
-	border-color:#666;
-}
-.janelaConteudo{
-	margin-top:10px;
-	margin-left:24px;
-	
+.pesquisa img#lupa{
+    width:20px;
+    height:20px;
 }
 /* ------------ATÉ AQUI------------------*/
 
@@ -435,19 +594,19 @@ element.style {
 /*MENU*/
 
 #header #darkBox{
-	min-height:205px;
-	background:rgba(0,0,0,0.9);
-	display:none;
+    min-height:205px;
+    background:#080e1c;
+    display:none;
 }
 #header .main {
-	margin: 0 auto;
-	width:1080px;
-	height:70px;
+    margin: 0 auto;
+    width:1080px;
+    height:70px;
 }
 
 img.logo {
     margin-top: 15px;
-	margin-left:4px;
+    margin-left:4px;
 }
 
 img.iconeMenu {
@@ -455,18 +614,18 @@ img.iconeMenu {
     margin-right: 4px;
 }
 .menu{
-	list-style-type:none;
-	float:right;
-	margin-top:0px;
-	height:70px;
-	right:20px;
+    list-style-type:none;
+    float:right;
+    margin-top:0px;
+    height:70px;
+    right:20px;
 }
 .menu li {
     position: relative;
     float: left;
     text-transform: none;
     display: inline;
-    padding: 12px 20px 12px 20px;
+    padding: 12px 15px 12px 15px;
     height: 46px;
     line-height: 45px;
 } 
@@ -476,15 +635,15 @@ ul#menu {
 }
 
 .menu a{
-	text-decoration:none;
-	color:white;
+    text-decoration:none;
+    color:white;
 }
 
 .menu li ul{
-	position:absolute;
-	top:42px;
-	left:-40px;
-	display:none;
+    position:absolute;
+    top:42px;
+    left:-40px;
+    display:none;
 }
 /*SUBMENU*/
 .submenu {
@@ -495,40 +654,48 @@ ul#menu {
 }
 
 .submenu li:hover  {
-	background-color:#00244D;
+    background-color:#00244D;
 }
 
 .menu li ul li:hover > .submenu{
-	display:block !important;
+    display:block !important;
 }
 
 /*.menu li:last-child ul:last-child li {
     width: 86px;
 }*/
 
-#last li{
- width:86px;
+
+.last{
+    width:64px;
+}
+.last li{
+    width:86px !important;
+    padding: 4px !important;
 }
 
+.penultimo li{
+    width:152px !important;
+}
 /*FIM SUBMENU*/
 
 
 
 .menu li ul li{
-	display:block;
-	width:223px;
-	height:25px;
-	line-height:25px;
-	border-bottom:1px solid rgba(255,255,207,0.1);
-	padding:4px;
-	top:28px;
+    display:block;
+    width:213px;
+    height:25px;
+    line-height:25px;
+    border-bottom:1px solid rgba(255,255,207,0.1);
+    padding:4px 4px 4px 14px;
+    top:28px;
 }
 li:hover{
-	background-color:#00244D;
+    background-color:#00244D;
 }
 
 .menu li:hover ul, .menu li ul li:hover ul, .menu li.over ul, .menu li ul li.over ul{
-	display:block;
+    display:block;
 }
 
 
@@ -536,9 +703,9 @@ li:hover{
 
 /*FORMULARIO*/
 .campo{
-	display:inline-block;
-	margin-bottom:15px;
-	margin-right:5px;
+    display:inline-block;
+    margin-bottom:15px;
+    margin-right:5px;
 }
 
 label {
@@ -547,11 +714,11 @@ label {
 }
 
 #formularioJ {
-	width:674px;
-	height:100%;
-	margin:0 197px auto;
-	text-transform: none;
-	font-size:13px;
+    width:674px;
+    height:100%;
+    margin:0 197px auto;
+    text-transform: none;
+    font-size:13px;
 }
 
 element.style {
@@ -578,59 +745,68 @@ user agent stylesheetkeygen, select {
 /*placeholder*/
 
 ::-webkit-input-placeholder {
-   font: 12px verdana, arial, sans-serif;
-   text-transform: none;
+    font: 12px verdana, arial, sans-serif;
+    text-transform: none;
 }
 
 :-moz-placeholder {
-  font: 12px verdana, arial, sans-serif;
-  text-transform: none;
+    font: 12px verdana, arial, sans-serif;
+    text-transform: none;
 }
 
 ::-moz-placeholder {
-   font: 12px verdana, arial, sans-serif;
-   text-transform: none;
+    font: 12px verdana, arial, sans-serif;
+    text-transform: none;
 }
 
 :-ms-input-placeholder {  
-   font: 12px verdana, arial, sans-serif;
-   text-transform: none;
+    font: 12px verdana, arial, sans-serif;
+    text-transform: none;
 }
-
 /*fim placeholder*/
 
-input #dataJ .campoObrig {
-	
-}
-
-input, option, select, textarea {
-	text-transform: uppercase;
-}
-
 fieldset {
-	border: none;
-	margin-bottom: 15px;
+    border: none;
+    margin-bottom: 15px;
 }
 
 legend {
-	border-bottom: 2px groove threedface;
-	width: 100%;
-	margin-bottom: 10px;
-	font-size: 18px;
+    border-bottom: 2px groove threedface;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 #formularioJ input{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-	border-radius: 5px;
+    border-radius: 5px;
     border: 1px solid #c2c2c2;
     font-size: 16px;
     padding: 4px;
-	height:21px;
+    height:21px;
+}
+
+textarea{
+        -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    font-size: 16px;
+}
+
+#formularioJJ input{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    font-size: 16px;
+    padding: 4px;
+    height:21px;
 }
 
 #formularioJ .data {
-	padding:5px;
+    padding:5px;
 }
 
 #botoes input {
@@ -647,96 +823,100 @@ legend {
     border-radius: 5px;
 }
 
+.contato #botoes input {
+    margin-top: 9px;
+    margin-bottom: 0;
+}
 /*ATUALIZADO DE -63 PARA -57 */
 #botoes {
-	text-align:center;
-	right: -179px;
+    text-align:center;
+    right: -179px;
     position: relative;
 }
 
 .login #botoes {
     text-align: left;
-    right: -58px;
+    right: -262px;
     position: relative;
 }
 
 .botao {
-	float:right;
-	margin-left:10px;
-	border:none;
-	
+    float:right;
+    margin-left:10px;
+    border:none;
+
 }
 .botao input{
-	margin-left:100px;
-	margin-top: 35px;
-	height: 50px;
-	width: 150px;
-	margin-left: 15px;
-	color: #FFF;
-	border: none;
-	font-size: 18px;
-	background-color: black;
-	margin-bottom:35px;
-	border-radius:5px;
+    margin-left:100px;
+    margin-top: 35px;
+    height: 50px;
+    width: 150px;
+    margin-left: 15px;
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    background-color: black;
+    margin-bottom:35px;
+    border-radius:5px;
 }
 .botao .preto{
-	background-image:url(../imagens/btn-preto.png);
+    background-image:url(../imagens/btn-preto.png);
 }
 .botao .amarelo{
-	background-image:url(../imagens/btn-amarelo.png);
+    background-image:url(../imagens/btn-amarelo.png);
 }
 .botao .azul{
-	background-image:url(../imagens/btn-azul.png);
+    background-image:url(../imagens/btn-azul.png);
 }
 .botao :hover{
-	background-image:url(../imagens/btn-efeito.png);
+    background-image:url(../imagens/btn-efeito.png);
 }
 /*FIM FORMULARIO*/
 
 /*ERROS*/
 .tSpan{
-	font-size:10px;
-	position:absolute;
-	color:red;
-	margin-left:8px;
+    font-size:10px;
+    position:absolute;
+    color:red;
+    margin-left:8px;
 }
 /*FIM ERROS*/
 
 /*CONTEUDO SOMENTE CENTRAL*/
 .centro {
-	display:block;
-	width:1080px;
+    display:block;
+    width:1080px;
 }
 
 /*FIM CONTEDO SOMENTE CENTRAL*/
 
 /*CONTEUDO CENTRAL LADO ESQUERDO*/
 .esquerda{
-	float:left;
-	display:block;
-	width:540px;
-	text-align:center;
+    float:left;
+    display:block;
+    width:540px;
+    text-align:center;
 }
 /*FIM CONTEUDO CENTRAL LADO ESQUERDO*/
 
 /*CONTEUDO CENTRAL LADO DIREITO*/
 .direita{
-	text-align:center;
-	display:block;
-	width:540px;
-	float:right;
+    text-align:center;
+    display:block;
+    width:540px;
+    float:right;
 }
 
 /*FIM CONTEUDO CENTRAL LADO DIREITO*/
 /*
 a {
-	text-decoration: none;
-	color: #324481;
-	font-family: "Myriad Pro";
+        text-decoration: none;
+        color: #324481;
+        font-family: "Myriad Pro";
 }
 li{
-	list-style:none;
-	margin: 0;
+        list-style:none;
+        margin: 0;
 }
 */
 /*Barra do Menu*/
@@ -746,31 +926,31 @@ li{
 
 /*Div que centraliza o conteÃƒÆ’Ã‚Âºdo
 .wrapper {
-	width: 1080px;
-	margin: 0 auto;
+        width: 1080px;
+        margin: 0 auto;
 }
 Menu*/
 /*
 .menu {
-	float: right;
-	margin-top: 5px;
-	height: 70px;
+        float: right;
+        margin-top: 5px;
+        height: 70px;
 }
 .menu li {
-	display:inline;
-	float:right;
-	position:relative;
-	width:150px;
-	line-height:28px;
+        display:inline;
+        float:right;
+        position:relative;
+        width:150px;
+        line-height:28px;
 }
 .menu li a {
-	font-family: "Myriad Pro";
-	color: white;
-	text-decoration: none;
-	padding: 27px 10px;
+        font-family: "Myriad Pro";
+        color: white;
+        text-decoration: none;
+        padding: 27px 10px;
 }
 .menu li a:hover{
-	background-color: #00adf3;/*regra para quando o mouse passar em cima de um item do menu. A regra que define o tamanho da caixa a ser colorida ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© o padding acima. 
+        background-color: #00adf3;/*regra para quando o mouse passar em cima de um item do menu. A regra que define o tamanho da caixa a ser colorida ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© o padding acima. 
 }*/
 /*Fim menu*/
 
@@ -778,25 +958,25 @@ Menu*/
 
 /*fim submenu
 .main{
-	min-height: 100%;
-	padding-bottom: 0px;
-	margin: 0 auto;
+        min-height: 100%;
+        padding-bottom: 0px;
+        margin: 0 auto;
 }
 .home .header {
-	margin-top:0px;
+        margin-top:0px;
 }
 .home .main .wrapper {
-	width: 750px;
-	/* height: 100%; */
-	/*position: relative;
+        width: 750px;
+        /* height: 100%; */
+/*position: relative;
 }*/
 
 #enviarJ:hover, #alterarJ:hover {
     color: #14396A !important;
     background: transparent -moz-linear-gradient(center top , #295178, #E8E7EE) repeat scroll 0% 0%;
-	background: transparent -webkit-linear-gradient(#295178, #E8E7EE) repeat scroll 0% 0%;
-	background: transparent -o-linear-gradient(#295178, #E8E7EE) repeat scroll 0% 0%;
-	background: transparent linear-gradient(#295178, #E8E7EE) repeat scroll 0% 0%;
+    background: transparent -webkit-linear-gradient(#295178, #E8E7EE) repeat scroll 0% 0%;
+    background: transparent -o-linear-gradient(#295178, #E8E7EE) repeat scroll 0% 0%;
+    background: transparent linear-gradient(#295178, #E8E7EE) repeat scroll 0% 0%;
 }
 
 #limparJ:hover, #enviarJ, #pesquisarJ, #entrarJ {
@@ -810,9 +990,9 @@ Menu*/
     border-radius: 4px;
     border: 0px solid #3866A3;
     background: transparent -moz-linear-gradient(center top , #0678C2, #0F81CA) repeat scroll 0% 0%;
-	background: transparent -webkit-linear-gradient(#0678C2, #0F81CA) repeat scroll 0% 0%;
-	background: transparent linear-gradient(center top , #0678C2, #0F81CA) repeat scroll 0% 0%;
-	background: transparent -o-linear-gradient(center top , #0678C2, #0F81CA) repeat scroll 0% 0%;
+    background: transparent -webkit-linear-gradient(#0678C2, #0F81CA) repeat scroll 0% 0%;
+    background: transparent linear-gradient(center top , #0678C2, #0F81CA) repeat scroll 0% 0%;
+    background: transparent -o-linear-gradient(center top , #0678C2, #0F81CA) repeat scroll 0% 0%;
 
 }
 .DentroSys input {
@@ -829,9 +1009,9 @@ Menu*/
 }
 #limparJ:hover {
     background: transparent -moz-linear-gradient(center top , #080F17, #818185) repeat scroll 0% 0%;
-	background: transparent -webkit-linear-gradient(#080F17, #818185) repeat scroll 0% 0%;
-	background: transparent linear-gradient(#080F17, #818185) repeat scroll 0% 0%;
-	background: transparent -o-linear-gradient(#080F17, #818185) repeat scroll 0% 0%;
+    background: transparent -webkit-linear-gradient(#080F17, #818185) repeat scroll 0% 0%;
+    background: transparent linear-gradient(#080F17, #818185) repeat scroll 0% 0%;
+    background: transparent -o-linear-gradient(#080F17, #818185) repeat scroll 0% 0%;
 }
 
 #limparJ {
@@ -853,25 +1033,25 @@ Menu*/
 }
 /* ------------------------- Aqui começa a página faq ----------------------------------*/
 .faq .textomeio {
-	margin-left:200px;
-	margin-right:200px;
+    margin-left:200px;
+    margin-right:200px;
 }
 /*----------------------------- Aqui termina a página faq ------------------------- */ 
 
 /* --------------------- Aqui começa a página relatório ---------------------------- */
 .relatorio .radiorelatorio{
-float:right;
+    float:right;
 }
 .relatorio .botoes{
-float:right;
+    float:right;
 }
 /* ----------------------- Aqui termina a página relatório ---------------------- */
 /*--------------------------Aqui começa a tela de cadastrar/consultar pesagem --------*/
 .ui024 option{
-width:105px;
+    width:105px;
 }
 .ui025 option{
-width:154px;
+    width:154px;
 }
 /*----------------------------Aqui termina a tela de cadastrar/consultar pesagem --------*/
 /*------------------------------Aqui começa a tela de consultar posto de pesagem---------------*/
@@ -880,67 +1060,34 @@ width:154px;
 }
 
 /*------------------------------Aqui termina a tela de consultar posto de pesagem---------------*/
+/*------------------------------Tabela da tela de pesquisa ----------------------------------------------*/
 
-
-/*-----------------------------AQUI É O CSS PADRÃO-----------------------------
-    body {
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+table#tblConsulta {
+    background-color: rgba(0,0,0, 0.2);
+    min-width: 702px;
+    text-align: center;	
 }
 
-header, footer, nav, section {
-    display: block;
+td {
+    height: 25px;
 }
 
-
- Styles for basic forms
------------------------------------------------------------
-fieldset {
-    border: 1px solid #ddd;
-    padding: 0 1.4em 1.4em 1.4em;
-    margin: 0 0 1.5em 0;
+tr td:last-child a {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    color: transparent;
+    background-image: url(../../img/abrir.png) !important;
+    background-position: 0px 1px !important;
 }
 
-legend {
-    font-size: 1.2em;
+.cabecalh {
+    background-color: #041227;
     font-weight: bold;
+    font-size: 15px;
+    color:white;
 }
 
-textarea {
-    min-height: 75px;
-}
-
-.editor-label {
-    margin: 1em 0 0 0;
-}
-
-.editor-field {
-    margin: 0.5em 0 0 0;
-}
-
-
- Styles for validation helpers
------------------------------------------------------------
-.field-validation-error {
-    color: #f00;
-}
-
-.field-validation-valid {
-    display: none;
-}
-
-.input-validation-error {
-    border: 1px solid #f00;
-    background-color: #fee;
-}
-
-.validation-summary-errors {
-    font-weight: bold;
-    color: #f00;
-}
-
-.validation-summary-valid {
-    display: none;
-}*/
+/*---------------------------Fim da tela tabela da tela de pesquisa-----------------------------------*/

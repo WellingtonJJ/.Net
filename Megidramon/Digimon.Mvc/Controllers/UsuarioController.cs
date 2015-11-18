@@ -8,7 +8,7 @@ using Digimon.Aplicacao;
 
 namespace Digimon.Mvc.Controllers
 {
-    public class UsuarioController : Controller
+    public class usuarioController : Controller
     {
         //
         // GET: /Usuario/

@@ -6,17 +6,12 @@ using System.Web.Mvc;
 
 namespace Digimon.Mvc.Controllers
 {
-    public class sobreController : Controller
+    public class contaController : Controller
     {
         //
-        // GET: /Sobre/
+        // GET: /conta/
 
-        public ActionResult ui033faq()
-        {
-            return View();
-        }
-
-        public ActionResult ui034faleconosco()
+        public ActionResult ui032minhaconta()
         {
             return View();
         }

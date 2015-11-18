@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -126,13 +127,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\FreteController.cs" />
-    <Compile Include="Controllers\MotoristaController.cs" />
-    <Compile Include="Controllers\SobreController.cs" />
-    <Compile Include="Controllers\TransportadorAutoController.cs" />
-    <Compile Include="Controllers\TransportadorEmpController.cs" />
-    <Compile Include="Controllers\UsuarioController.cs" />
-    <Compile Include="Controllers\VeiculoController.cs" />
+    <Compile Include="Controllers\contaController.cs" />
+    <Compile Include="Controllers\freteController.cs" />
+    <Compile Include="Controllers\motoristaController.cs" />
+    <Compile Include="Controllers\relatorioController.cs" />
+    <Compile Include="Controllers\sobreController.cs" />
+    <Compile Include="Controllers\transportadorautoController.cs" />
+    <Compile Include="Controllers\transportadorempController.cs" />
+    <Compile Include="Controllers\usuarioController.cs" />
+    <Compile Include="Controllers\veiculoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -253,18 +256,20 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Motorista\Index.cshtml" />
-    <Content Include="Views\Motorista\ui020cadastrarmotorista.cshtml" />
-    <Content Include="Views\Motorista\Alterar.cshtml" />
-    <Content Include="Views\Motorista\Detalhes.cshtml" />
-    <Content Include="Views\Frete\ui006cadastrarfrete.cshtml" />
+    <Content Include="Views\motorista\Index.cshtml" />
+    <Content Include="Views\motorista\ui020cadastrarmotorista.cshtml" />
+    <Content Include="Views\motorista\Alterar.cshtml" />
+    <Content Include="Views\motorista\Detalhes.cshtml" />
+    <Content Include="Views\frete\ui006cadastrarfrete.cshtml" />
     <Content Include="Views\Shared\_OFFLayout.cshtml" />
-    <Content Include="Views\Sobre\ui033faq.cshtml" />
-    <Content Include="Views\Sobre\ui034faleconosco.cshtml" />
-    <Content Include="Views\Frete\Index.cshtml" />
-    <Content Include="Views\Veiculo\ui008cadastrarveiculo.cshtml" />
-    <Content Include="Views\TransportadorEmp\ui010cadastrartransportador.cshtml" />
-    <Content Include="Views\Usuario\ui012cadastrarusuario.cshtml" />
+    <Content Include="Views\sobre\ui033faq.cshtml" />
+    <Content Include="Views\sobre\ui034faleconosco.cshtml" />
+    <Content Include="Views\frete\Index.cshtml" />
+    <Content Include="Views\veiculo\ui008cadastrarveiculo.cshtml" />
+    <Content Include="Views\transportadorEmp\ui010cadastrartransportador.cshtml" />
+    <Content Include="Views\usuario\ui012cadastrarusuario.cshtml" />
+    <Content Include="Views\conta\ui032minhaconta.cshtml" />
+    <Content Include="Views\relatorio\ui030relatorio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +286,10 @@
     <ProjectReference Include="..\Digimon.Dominio\Digimon.Dominio.csproj">
       <Project>{50d08a8b-ace1-49e6-8f70-3c6bf1a0e4c4}</Project>
       <Name>Digimon.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositorio\Repositorio.csproj">
+      <Project>{deac2e16-27b9-4d7c-a329-28ca0fe0c87d}</Project>
+      <Name>Repositorio</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
