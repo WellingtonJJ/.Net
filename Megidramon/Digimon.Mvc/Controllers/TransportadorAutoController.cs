@@ -14,12 +14,51 @@ namespace Digimon.Mvc.Controllers
         // GET: /TransportadorAuto/
         public ActionResult TransportadorAuto()
         {
+            /*
+            var idusuario = Request.Cookies["userId"].Value;
+            var permissao = Request.Cookies["permissao"].Value;
+
+            if (string.IsNullOrEmpty(idusuario))
+            {
+                Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+            }
+
+            if (!String.IsNullOrEmpty(permissao))
+            {
+                if ((permissao != "3") && (permissao != "5"))
+                {
+                    Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                }
+            }
+             * 
+             * */
+
             return View();
         }
         
         [HttpPost]
         public ActionResult TransportadorAuto(TransportadorAutonomo Transportador)
         {
+
+            /*
+            var idusuario = Request.Cookies["userId"].Value;
+            var permissao = Request.Cookies["permissao"].Value;
+
+            if (string.IsNullOrEmpty(idusuario))
+            {
+                Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+            }
+
+            if (!String.IsNullOrEmpty(permissao))
+            {
+                if ((permissao != "3") && (permissao != "5"))
+                {
+                    Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                }
+            }
+             * 
+             * */
+
             if(ModelState.IsValid)
             {
             TransportadorAutoAplicacao transportador = new TransportadorAutoAplicacao();
