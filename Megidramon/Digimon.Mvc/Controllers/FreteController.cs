@@ -15,6 +15,26 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult Index()
         {
+            /*
+            var idusuario = Request.Cookies["userId"].Value;
+            var permissao = Request.Cookies["permissao"].Value;
+
+            if (string.IsNullOrEmpty(idusuario))
+            {
+                Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+            }
+
+            if (!String.IsNullOrEmpty(permissao))
+            {
+                if ((permissao != "3") && (permissao != "5") && (permissao != "6"))
+                {
+                    Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                }
+            }
+             * 
+             * */
+
+
             var appFrete = new FreteAplicacao();
             var listadeFretes = appFrete.ListarTodos();
             return View(listadeFretes);
@@ -23,28 +43,24 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult ui006cadastrarfrete()
         {
-            /* remover comentario aqui
-            HttpCookie cookie = new HttpCookie("Usuario");
-            cookie.Value = "3";		                         //VALOR FICTICIO PARA SIMULAR PERMISSÃO DO USUARIO LOGADO EM SISTEMA/ depois precisa criar uma ado aqui para buscar a permissão do usaurio no banco
-            Response.Cookies.Add(cookie);
-            var permissao = Request.Cookies["Usuario"].Value;
+                    /*
+                     var idusuario = Request.Cookies["userId"].Value;
+                     var permissao = Request.Cookies["permissao"].Value;
 
-            if (string.IsNullOrEmpty(permissao))            // se cookie estiver vazio ou nullo, usuario nao está logado e será redirecionado para pagina de logim
-            {	                                            //USUARIO NAO ESTÀ LOGADO // neste exemplo usuario será desviado para site g1, substiruir pagina por pagina logim
-                Response.Redirect("http://g1.globo.com/index.html");
-            }
+                     if (string.IsNullOrEmpty(idusuario))
+                     {
+                         Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+                     }
 
-            if (!String.IsNullOrEmpty(permissao))
-            {
-                if ((permissao != "3") && (permissao != "5") && (permissao != "6")) // unicas permissões permitida para este usuario, se for diferente de  3, 5 ou 6, usuario nao pode acessar
-                {                                                                    // USUARIO NAO TEM PERMISSAO PARA ACESSAR ESTA PAGINA, será redirecionado para google, substituir para uma tela padrão de nao permitido
-                    Response.Redirect("https://www.google.com.br/webhp?hl=pt-BR");
-                }
-            }
-
-
-            /*  OBS SE USUARIO PASSAR POR CONDIUÇÕES ACIMA, ELE TEM PERMISSÃO PARA ACESSAR A PAGINA, ENTAO ABAIXO DESTE COMENTARIO
-             *  SISTEMA SEGUE NORMALMENTE     remover comentario aqui */
+                     if (!String.IsNullOrEmpty(permissao))
+                     {
+                         if ((permissao != "3") && (permissao != "5") && (permissao != "6"))
+                         {
+                             Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                         }
+                     }
+                      * 
+                      * */
 
             return View();
         }
@@ -52,28 +68,24 @@ namespace Digimon.Mvc.Controllers
         [HttpPost]
         public ActionResult ui006cadastrarfrete(Frete frete)
         {
-            /*
-            HttpCookie cookie = new HttpCookie("Usuario");
-            cookie.Value = "3";	                            //VALOR FICTICIO PARA SIMULAR PERMISSÃO DO USUARIO LOGADO EM SISTEMA/ depois precisa criar uma ado aqui para buscar a permissão do usaurio no banco
-            Response.Cookies.Add(cookie);
-            var permissao = Request.Cookies["Usuario"].Value;
+                    /*
+                     var idusuario = Request.Cookies["userId"].Value;
+                     var permissao = Request.Cookies["permissao"].Value;
 
+                     if (string.IsNullOrEmpty(idusuario))
+                     {
+                         Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+                     }
 
-            if (string.IsNullOrEmpty(permissao))                // se cookie estiver vazio ou nullo, usuario nao está logado e será redirecionado para pagina de logim
-            {	//USUARIO NAO ESTÀ LOGADO                       //USUARIO NAO ESTÀ LOGADO // neste exemplo usuario será desviado para site g1, substiruir pagina por pagina logim
-                Response.Redirect("http://g1.globo.com/index.html");
-            }
-
-            if (!String.IsNullOrEmpty(permissao))
-            {
-                if ((permissao != "3") && (permissao != "5") && (permissao != "6")) // unicas permissões permitida para este usuario, se for diferente de  3, 5 ou 6, usuario nao pode acessar
-                {                                                                    // USUARIO NAO TEM PERMISSAO PARA ACESSAR ESTA PAGINA / // USUARIO NAO TEM PERMISSAO PARA ACESSAR ESTA PAGINA, será redirecionado para google, substituir para uma tela padrão de nao permitido
-                    Response.Redirect("https://www.google.com.br/webhp?hl=pt-BR");
-                }
-            }
-
-            /*  OBS SE USUARIO PASSAR POR CONDIUÇÕES ACIMA, ELE TEM PERMISSÃO PARA ACESSAR A PAGINA, ENTAO ABAIXO DESTE COMENTARIO
-             *  SISTEMA SEGUE NORMALMENTE */
+                     if (!String.IsNullOrEmpty(permissao))
+                     {
+                         if ((permissao != "3") && (permissao != "5") && (permissao != "6"))
+                         {
+                             Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                         }
+                     }
+                      * 
+                      * */
 
             if (ModelState.IsValid)
             {
