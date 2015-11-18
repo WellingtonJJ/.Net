@@ -15,6 +15,27 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult Index()
         {
+
+                /*
+                    var idusuario = Request.Cookies["userId"].Value;
+                    var permissao = Request.Cookies["permissao"].Value;
+
+                    if (string.IsNullOrEmpty(idusuario))
+                    {
+                        Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+                    }
+
+                    if (!String.IsNullOrEmpty(permissao))
+                    {
+                        if ((permissao != "3") && (permissao != "1"))
+                        {
+                            Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                        }
+                    }
+                 * 
+                 * */
+
+
             var appTransportador = new TransportadorEmpAplicacao();
             var listadeTransportadores = appTransportador.ListarTodos();
             return View(listadeTransportadores);
