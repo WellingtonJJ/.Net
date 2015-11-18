@@ -13,6 +13,24 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult ui030relatorio()
         {
+
+
+            var idusuario = Request.Cookies["userId"].Value;
+            var permissao = Request.Cookies["permissao"].Value;
+
+            if (string.IsNullOrEmpty(idusuario))
+            {
+                Response.Redirect("http://www.projetodigimon.com.br/ui002login.jsp");
+            }
+
+            if (!String.IsNullOrEmpty(permissao))
+            {
+                if ((permissao != "3"))
+                {
+                    Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
+                }
+            }
+
             return View();
         }
 
