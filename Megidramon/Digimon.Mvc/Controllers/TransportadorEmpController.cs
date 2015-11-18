@@ -16,7 +16,7 @@ namespace Digimon.Mvc.Controllers
         public ActionResult Index()
         {
 
-                /*
+                
                     var idusuario = Request.Cookies["userId"].Value;
                     var permissao = Request.Cookies["permissao"].Value;
 
@@ -32,8 +32,8 @@ namespace Digimon.Mvc.Controllers
                             Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                         }
                     }
-                 * 
-                 * */
+                 
+                 
 
 
             var appTransportador = new TransportadorEmpAplicacao();
@@ -43,7 +43,7 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult CadastrarTransportadorEmp()
         {
-            /*
+            
                 var idusuario = Request.Cookies["userId"].Value;
                 var permissao = Request.Cookies["permissao"].Value;
 
@@ -59,15 +59,15 @@ namespace Digimon.Mvc.Controllers
                         Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                     }
                 }
-             * 
-             * */
+             
+             
             return View();
         }
 
         [HttpPost]
         public ActionResult CadastrarTransportadorEmp(TransportadorEmpresa transportador)
         {
-            /*
+            
             var idusuario = Request.Cookies["userId"].Value;
             var permissao = Request.Cookies["permissao"].Value;
 
@@ -83,8 +83,8 @@ namespace Digimon.Mvc.Controllers
                     Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                 }
             }
-             * 
-             * */
+             
+             
 
             if (ModelState.IsValid)
             {

@@ -14,7 +14,7 @@ namespace Digimon.Mvc.Controllers
         // GET: /TransportadorAuto/
         public ActionResult TransportadorAuto()
         {
-            /*
+            
             var idusuario = Request.Cookies["userId"].Value;
             var permissao = Request.Cookies["permissao"].Value;
 
@@ -30,8 +30,8 @@ namespace Digimon.Mvc.Controllers
                     Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                 }
             }
-             * 
-             * */
+             
+             
 
             return View();
         }
@@ -40,7 +40,7 @@ namespace Digimon.Mvc.Controllers
         public ActionResult TransportadorAuto(TransportadorAutonomo Transportador)
         {
 
-            /*
+            
             var idusuario = Request.Cookies["userId"].Value;
             var permissao = Request.Cookies["permissao"].Value;
 
@@ -56,8 +56,8 @@ namespace Digimon.Mvc.Controllers
                     Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                 }
             }
-             * 
-             * */
+             
+             
 
             if(ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace Digimon.Mvc.Controllers
             return View();
         }
 
-        /*  public ActionResult AlterarTransportador()
+        /* public ActionResult AlterarTransportador()
           {
               TransportadorAutoAplicacao transpordor = new TransportadorAutoAplicacao();
               var listaDeTransportadores = transpordor.ListarTodos();

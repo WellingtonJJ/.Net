@@ -16,7 +16,7 @@ namespace Digimon.Mvc.Controllers
         public ActionResult ui012cadastrarusuario()
         {
 
-            /*
+            
             var idusuario = Request.Cookies["userId"].Value;
             var permissao = Request.Cookies["permissao"].Value;
 
@@ -32,7 +32,7 @@ namespace Digimon.Mvc.Controllers
                     Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                 }
             }
-            */
+            
 
             return View();
         }
@@ -40,7 +40,7 @@ namespace Digimon.Mvc.Controllers
         public ActionResult ui012cadastrarusuario(Usuario usuario)
         {
 
-                /*
+                
                var idusuario = Request.Cookies["userId"].Value;
                var permissao = Request.Cookies["permissao"].Value;
 
@@ -56,7 +56,7 @@ namespace Digimon.Mvc.Controllers
                        Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                    }
                }
-               */
+               
 
 
 

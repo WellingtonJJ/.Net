@@ -20,7 +20,7 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult ui020cadastrarmotorista()
         {
-            /*
+            
                         var idusuario = Request.Cookies["userId"].Value;
                         var permissao = Request.Cookies["permissao"].Value;
 
@@ -36,7 +36,7 @@ namespace Digimon.Mvc.Controllers
                                 Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                             }
                         }
-            */
+            
 
             return View();
         }
@@ -45,7 +45,7 @@ namespace Digimon.Mvc.Controllers
         public ActionResult ui020cadastrarmotorista(Motorista motorista)
         {
 
-                    /*
+                    
                         var idusuario = Request.Cookies["userId"].Value;
                         var permissao = Request.Cookies["permissao"].Value;
 
@@ -61,7 +61,7 @@ namespace Digimon.Mvc.Controllers
                                 Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                             }
                         }
-            */
+            
 
             if (ModelState.IsValid)
             {
@@ -74,7 +74,7 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult Alterar(int id)
         {
-            /*
+            
                    var idusuario = Request.Cookies["userId"].Value;
                    var permissao = Request.Cookies["permissao"].Value;
 
@@ -90,7 +90,7 @@ namespace Digimon.Mvc.Controllers
                            Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                        }
                    }
-       */
+       
 
 
             var appMotorista = new MotoristaAplicacao();
@@ -106,7 +106,7 @@ namespace Digimon.Mvc.Controllers
         public ActionResult Alterar(Motorista motorista)
         {
 
-                    /*
+                    
                         var idusuario = Request.Cookies["userId"].Value;
                         var permissao = Request.Cookies["permissao"].Value;
 
@@ -122,7 +122,7 @@ namespace Digimon.Mvc.Controllers
                                 Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                             }
                         }
-            */
+            
 
                     if (ModelState.IsValid)
                     {
@@ -135,7 +135,7 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult Detalhes(int id)
         {
-                    /*
+                    
                          var idusuario = Request.Cookies["userId"].Value;
                          var permissao = Request.Cookies["permissao"].Value;
 
@@ -151,7 +151,7 @@ namespace Digimon.Mvc.Controllers
                                  Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                              }
                          }
-             */
+             
             var appMotorista = new MotoristaAplicacao();
             var motorista = appMotorista.ListarMotorista(id);
 

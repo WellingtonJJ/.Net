@@ -15,7 +15,7 @@ namespace Digimon.Mvc.Controllers
 
         public ActionResult ui008cadastrarveiculo()
         {
-            /*
+            
                     var idusuario = Request.Cookies["userId"].Value;
                     var permissao = Request.Cookies["permissao"].Value;
 
@@ -31,7 +31,7 @@ namespace Digimon.Mvc.Controllers
                             Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                         }
                     }
-                     * */   
+                      
 
 
             Veiculo veiculo = new Veiculo();
@@ -44,7 +44,7 @@ namespace Digimon.Mvc.Controllers
         {
 
 
-            /*
+            
                    var idusuario = Request.Cookies["userId"].Value;
                    var permissao = Request.Cookies["permissao"].Value;
 
@@ -60,7 +60,7 @@ namespace Digimon.Mvc.Controllers
                            Response.Redirect("http://www.projetodigimon.com.br/pagina-de-redirecionamento.jsp");
                        }
                    }
-                    * */   
+                     
 
 
             if(ModelState.IsValid)
