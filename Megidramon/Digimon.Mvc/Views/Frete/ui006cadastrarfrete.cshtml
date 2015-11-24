@@ -1,211 +1,292 @@
-﻿@model Digimon.Dominio.Frete
-
 @{
     ViewBag.Title = "Cadastro de Fretes";
 }
 
-<h2>Cadastrar Frete</h2>
+<h1>Cadastro de Frete</h1>
+<form action="#" method="post" id="formularioJ">
+<fieldset>
+    <legend>Dados do Transportador</legend>
+    <div class="campo">
+        <label for="transportadorJ">Transportador</label><br>
+        <input type="text" name="transportador" id="transportadorJ" class="campoObrig"><span id="x_transportadorJ"  class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="MotoristaJ">Motorista</label><br>
+        <select id="MotoristaJ">
+            <option value="José">José</option>
+            <option value="Jeremias">Jeremias</option>
+            <option value="João">João</option>
+            <option value="Jacó">Jacó</option>
+        </select>
+    </div>
+    <div class="campo">
+        <label for="veiculoJ">Veículo</label><br>
+        <input type="text" name="veiculo" id="veiculoJ" maxlength="14" size="14" class="campoObrig"><span id="x_veiculoJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="dataJ">Data</label><br>
+        <input type="text" name="data" id="dataJ" maxlength="10" size="11" placeholder="__/__/_____" class="campoObrig"><span id="x_dataJ" class="tSpan"></span>
+    </div>
+</fieldset>
 
-@using (Html.BeginForm()) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
+<fieldset>
+    <legend>Tipo de Frete</legend>
+    <input type="radio" id="domesticoJ" name="ti" value="domestico" checked><label for="domesticoJ">Doméstico</label>
+    <input type="radio" id="empresarialJ" name="ti" value="empresarial"><label for="empresarialJ">Empresarial</label>
+</fieldset>
+<fieldset>
+    <legend>Carga - Remetente</legend>
+    <div class="campo">
+        <label for="rgJ">RG</label><br>
+        <input type="text" name="rg" id="rgJ" size="18" maxlength="14" class="campoObrig"><span id="x_rgJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="ufJ">UF</label><br>
+        <select id="ufJ" name="uf">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ" selected>RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RS">RS</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="SP">SP</option>
+            <option value="TO">TO</option>
+        </select><span id="x_ufJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="orgaoEmissorJ">Orgão Emissor</label><br>
+        <input type="text" name="orgaoEmissor" id="orgaoEmissorJ" placeholder="Ex. Detran" size="19" maxlength="14" class="campoObrig iLetras"><span id="x_orgaoEmissorJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="nomeJ">Nome</label><br>
+        <input type="text" name="nome" id="nomeJ" class="campoObrig iLetras" placeholder="Nome Completo" size="47" maxlength="60"><span id="x_nomeJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="cpfJ">CPF</label><br>
+        <input type="text" name="cpf" id="cpfJ" placeholder=" ___.___.___-__" class="campoObrig" size="18" maxlength="14"><span id="x_cpfJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="dataR">Data Nascimento</label><br>
+        <input type="text" name="data" id="dataR" size="14" placeholder="__/__/_____" maxlength="10" class="campoObrig data"><span id="x_dataR" class="tSpan"></span>
+    </div>
+</fieldset>
 
-    <fieldset>
-        <legend>Frete</legend>
+<fieldset>
+    <legend>Carga - Destinatário</legend>
+    <div class="campo">
+        <label for="rgJD">RG</label><br>
+        <input type="text" name="rgD" id="rgJD" size="18" maxlength="14" class="campoObrig"><span id="x_rgJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="ufJD">UF</label><br>
+        <select id="ufJD" name="ufD">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ" selected>RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RS">RS</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="SP">SP</option>
+            <option value="TO">TO</option>
+        </select><span id="x_ufJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="orgaoEmissorJD">Orgão Emissor</label><br>
+        <input type="text" name="orgaoEmissorD" id="orgaoEmissorJD" placeholder="Ex. Detran" size="19" maxlength="14" class="campoObrig iLetras"><span id="x_orgaoEmissorJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="nomeJD">Nome</label><br>
+        <input type="text" name="nomeD" id="nomeJD" class="campoObrig iLetras" placeholder="Nome Completo" size="47" maxlength="60"><span id="x_nomeJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="cpfJD">CPF</label><br>
+        <input type="text" name="cpfD" id="cpfJD" placeholder=" ___.___.___-__" class="campoObrig" size="18" maxlength="14"><span id="x_cpfJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="dataJD">Data Nascimento</label><br>
+        <input type="text" name="dataD" id="dataJD" size="14" placeholder="__/__/_____" maxlength="10" class="campoObrig data"><span id="x_dataJD" class="tSpan"></span>
+    </div>
+</fieldset>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Placa)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Placa)
-            @Html.ValidationMessageFor(model => model.Placa)
-        </div>
+<fieldset>
+    <legend>Carga - Origem</legend>
+    <div class="campo">
+        <label for="cepJ">CEP</label><br>
+        <input type="text" name="cep" id="cepJ" size="10" maxlength="10" placeholder="_____-___" class="campoObrig"><span id="x_cepJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="logradouroJ">Logradouro</label><br>
+        <input type="text" name="logradouro" id="logradouroJ" size="28" maxlength="40" class="campoObrig iLetras" placeholder="Rua, Av"><span id="x_logradouroJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="numeroJ">Número</label><br>
+        <input type="text" name="numero" id="numeroJ" size="4" maxlength="10" class="campoObrig"><span id="x_numeroJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="complementoJ">Complemento</label><br>
+        <input type="text" name="complemento" id="complementoJ" size="11" maxlength="14" placeholder="Ex. Casa" class="campoObrig"><span id="x_complementoJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="bairroJ">Bairro</label><br>
+        <input type="text" name="bairro" id="bairroJ" size="18" maxlength="40" class="campoObrig"><span id="x_bairroJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="cidadeJ">Cidade</label><br>
+        <input type="text" name="cidade" id="cidadeJ" size="19" maxlength="40" class="campoObrig iLetras"><span id="x_cidadeJ" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="ufJO">UF</label><br>
+        <select id="ufJO" name="uf">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ" selected>RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RS">RS</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="SP">SP</option>
+            <option value="TO">TO</option>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Cnh)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Cnh)
-            @Html.ValidationMessageFor(model => model.Cnh)
-        </div>
+        </select><span id="x_ufJO" class="tSpan"></span>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Carga - Destino</legend>
+    <div class="campo">
+        <label for="cepJD">CEP</label><br>
+        <input type="text" name="cepD" id="cepJD" size="10" maxlength="10" placeholder="_____-___" class="campoObrig"><span id="x_cepJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="logradouroJD">Logradouro</label><br>
+        <input type="text" name="logradouroD" id="logradouroJD" size="28" maxlength="40" class="campoObrig iLetras" placeholder="Rua, Av"><span id="x_logradouroJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="numeroJD">Número</label><br>
+        <input type="text" name="numeroD" id="numeroJD" size="4" maxlength="10" class="campoObrig"><span id="x_numeroJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="complementoJD">Complemento</label><br>
+        <input type="text" name="complementoD" id="complementoJD" size="11" maxlength="14" placeholder="Ex. Casa" class=""><span id="x_complementoJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="bairroJD">Bairro</label><br>
+        <input type="text" name="bairroD" id="bairroJD" size="18" maxlength="40" class="campoObrig"><span id="x_bairroJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="cidadeJD">Cidade</label><br>
+        <input type="text" name="cidadeD" id="cidadeJD" size="19" maxlength="40" class="campoObrig iLetras"><span id="x_cidadeJD" class="tSpan"></span>
+    </div>
+    <div class="campo">
+        <label for="ufJDT">UF</label><br>
+        <select id="ufJDT" name="D">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ" selected>RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RS">RS</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="SP">SP</option>
+            <option value="TO">TO</option>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Tipo)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Tipo)
-            @Html.ValidationMessageFor(model => model.Tipo)
-        </div>
+        </select><span id="x_ufJDT" class="tSpan"></span>
+    </div>
+</fieldset>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DataEntrega)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DataEntrega)
-            @Html.ValidationMessageFor(model => model.DataEntrega)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DataSaida)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DataSaida)
-            @Html.ValidationMessageFor(model => model.DataSaida)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Rtnrc)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Rtnrc)
-            @Html.ValidationMessageFor(model => model.Rtnrc)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.TipoCarga)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.TipoCarga)
-            @Html.ValidationMessageFor(model => model.TipoCarga)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Remetente)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Remetente)
-            @Html.ValidationMessageFor(model => model.Remetente)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Destinatario)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Destinatario)
-            @Html.ValidationMessageFor(model => model.Destinatario)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RLogradouro)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RLogradouro)
-            @Html.ValidationMessageFor(model => model.RLogradouro)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RNumero)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RNumero)
-            @Html.ValidationMessageFor(model => model.RNumero)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RComplemento)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RComplemento)
-            @Html.ValidationMessageFor(model => model.RComplemento)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RCep)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RCep)
-            @Html.ValidationMessageFor(model => model.RCep)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RBairro)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RBairro)
-            @Html.ValidationMessageFor(model => model.RBairro)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RCidade)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RCidade)
-            @Html.ValidationMessageFor(model => model.RCidade)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.RUf)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.RUf)
-            @Html.ValidationMessageFor(model => model.RUf)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DLogradouro)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DLogradouro)
-            @Html.ValidationMessageFor(model => model.DLogradouro)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DNumero)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DNumero)
-            @Html.ValidationMessageFor(model => model.DNumero)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DComplemento)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DComplemento)
-            @Html.ValidationMessageFor(model => model.DComplemento)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DCep)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DCep)
-            @Html.ValidationMessageFor(model => model.DCep)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DBairro)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DBairro)
-            @Html.ValidationMessageFor(model => model.DBairro)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DCidade)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DCidade)
-            @Html.ValidationMessageFor(model => model.DCidade)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.DUf)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.DUf)
-            @Html.ValidationMessageFor(model => model.DUf)
-        </div>
-
-        <p>
-            <input type="submit" value="Create" />
-        </p>
-    </fieldset>
-}
-
-<div>
-    @Html.ActionLink("Voltar", "Index")
-</div>
+<fieldset>
+    <legend>Carga - Produto</legend>
+    <div class="campo">
+        <label for="mercadoriaJ">Mercadoria:</label><br>
+        <input type="text" name="mercadoria" id="mercadoriaJ" class="campoObrig"><span id="x_mercadoriaJ" class=""></span>
+    </div>
+    <div class="campo">
+        <label for="pesoTotalJ">Peso Total:</label><br>
+        <input type="text" name="pesoTotal" id="pesoTotalJ" class="campoObrig"><span id="x_pesoTotalJ" class=""></span>
+    </div>
+    <div class="campo">
+        <label for="valorTotalJ">Valor Total:</label><br>
+        <input type="text" name="valorTotal" id="valorTotalJ" class="campoObrig"><span id="x_valorTotalJ" class=""></span>
+    </div>
+</fieldset>
+<div class="botoes" id="botoes">
+    <input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
+    <input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
+</div><!--Fim div botoes-->
+</form>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
