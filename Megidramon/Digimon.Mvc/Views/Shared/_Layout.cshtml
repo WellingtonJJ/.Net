@@ -1,17 +1,19 @@
-﻿<!DOCTYPE html>
+.<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../dist/imagens/favicon-32x32.png">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title | DigiMon</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/dist/js/novo.js")
     @Scripts.Render("~/dist/js/novocpqs.js")
 </head>
-<div id="header">
-    <div class="main">
-        <a href="http://www.projetodigimon.com.br/ui005home.jsp"><img src="dist/imagens/logoo.png" class="logo" id="logoo" alt="Logo"/></a>
+<body>
+    <div id="interface">
+		<div id="header">
+			<div class="main">
+			<a href="http://www.projetodigimon.com.br/ui005home.jsp"><img src="dist/imagens/logoo.png" class="logo" id="logoo" alt="Logo"/></a>
         <ul class="menu" id="menu">
             <li><a href="http://www.projetodigimon.com.br/ui005home.jsp">Home</a></li>
             <li><a href="#">Transportador<img src="dist/imagens/seta.png" class="seta" alt="Opções de transportador"/></a>
@@ -109,25 +111,24 @@
                 <!--aqui termina a ul do botao sair e minha conta-->
             </li>
         </ul>
-    </div>
-    <div id="darkBox"></div>
-</div>
-<div class="erroForm">
-</div>
-
-                @RenderBody()
-
-            
-            <div id="clear"></div><!--Fim div clear-->
+    </div><!--Fim div Main Header-->
+            <div id="darkBox">
+            </div>
+		</div>
+		<div id="main">
+		    <div class="centro">
+    @RenderBody()
+            </div><!--Fim div centro-->
         </div><!--Fim div main conteúdo-->
-        <div id="rodape">
-            <div class="main">
-                <div id="footer">
-                    &copy 2015 - Projeto Digimon | Forsoft Rio
-                </div><!--Fim div Footer-->
-            </div><!--Fim div main do rodape-->
-        </div><!--Fim div "rodape"-->
-    </div><!--Fim div Interface-->
+        <div id="clear"></div><!--Fim div clear-->	
+		<div id="rodape">
+			<div class="main">
+				<div id="footer">
+				    <p>&copy; @DateTime.Now.Year - Projeto Digimon | Forsoft Rio</p>
+				</div><!--Fim div Footer-->
+			</div><!--Fim div main do rodape-->
+		</div><!--Fim div "rodape"-->
+	</div><!--Fim div Interface-->
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
