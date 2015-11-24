@@ -1,266 +1,108 @@
-﻿@model Digimon.Dominio.Usuario
-
-@{
+.@{
     ViewBag.Title = "Cadastrar Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-@using (Html.BeginForm("CadastrarUsuario", "Usuario", FormMethod.Post, new { id = "formularioJ" }))
-{
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
-}
+<h1>Cadastrar Usuário</h1>	
 
-	
-					<h1>Cadastrar Usuário</h1>	
-<fieldset>
-        <legend>Dados de pessoa física</legend>
-        <div class="campo">
-            @Html.LabelFor(model => model.Nome )<br>
-            @Html.EditorFor(model => model.Nome, new { id = "nomeJ", @class = "campoObrig", style = "width: 35px;", @placeholder="Nome completo", @maxlength="40" })
-            <span id="x_nomeJ" class="tSpan">@Html.ValidationMessageFor(model => model.Nome)</span>
-        </div>
-
-        <div class="campo">
-            @Html.LabelFor(model => model.CPF)<br>
-            @Html.EditorFor(model => model.CPF, new { id = "cpfJ", @class = "campoObrig", style = "width: 14px;" @placeholder=" ___.___.___-__", @maxlength="14"   })
-            <span id="x_cpfJ" class="tSpan">@Html.ValidationMessageFor(model => model.CPF)</span>
-        </div>
-
-        <div class="campo">
-            @Html.LabelFor(model => model.DataNascimento)<br>
-            @Html.EditorFor(model => model.DataNascimento, new { id = "dataNascimentoJ", @class = "campoObrig", style = "width: 15px;", @placeholder="__/__/____", @maxlength="14" })
-            <span id="x_dataNascimentoJ" class="tSpan">@Html.ValidationMessageFor(model => model.DataNascimento)</span>
-        </div>
-
-        <div class="campo">
-            @Html.LabelFor(model => model.RG)<br>
-            @Html.EditorFor(model => model.RG, new { id = "rgJ", @class = "campoObrig", style = "width: 15px;" })
-            <span id="x_rgJ" class="tSpan">@Html.ValidationMessageFor(model => model.RG)</span>
-        </div>
-    <div class="campo">
-        @Html.LabelFor(model => model.UF_PF)<br>
-			@{
-   List<SelectListItem> listItems= new List<SelectListItem>();
-   listItems.Add(new SelectListItem
-        {
-          Text = "AC",
-          Value = "AC"
-        });
-   listItems.Add(new SelectListItem
-        {
-            Text = "AM",
-            Value = "AM",
-            
-        });
-   listItems.Add(new SelectListItem
-        {
-            Text = "AP",
-            Value = "AP"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "BA",
-            Value = "BA"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "CE",
-            Value = "CE"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "DF",
-            Value = "DF"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "ES",
-            Value = "ES"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "GO",
-            Value = "GO"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "MA",
-            Value = "MA"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "MT",
-            Value = "MT"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "MG",
-            Value = "MG"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "PA",
-            Value = "PA"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "MA",
-            Value = "MA"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "MT",
-            Value = "MT"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "MG",
-            Value = "MG"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "PA",
-            Value = "PA"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "PB",
-            Value = "PB"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "PE",
-            Value = "PE"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "PI",
-            Value = "PI"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "PR",
-            Value = "PR"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "RJ",
-            Value = "RJ",
-			Selected = true
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "RN",
-            Value = "RN"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "RO",
-            Value = "RO"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "RS",
-            Value = "RS"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "RR",
-            Value = "RR"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "SC",
-            Value = "SC"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "SE",
-            Value = "SE"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "SP",
-            Value = "SP"
-        });
-		 listItems.Add(new SelectListItem
-        {
-            Text = "TO",
-            Value = "TO"
-        });
-        @Html.DropDownListFor(model => model.UF_PF, listItems, "-- Selecione UF --")
-        <span id="x_ufJ" class="tSpan">@Html.ValidationMessageFor(model => model.UF_PF)</span>
-        </div>
-        <div class="campo">
-            @Html.LabelFor(model => model.OrgaoEmissor)<br>
-            @Html.EditorFor(model => model.OrgaoEmissor, new { id = "orgaoEmissorJ", @class = "campoObrig", @placeholder = "Ex. Detran", style = "width: 15px;" })
-            <span id="x_orgaoEmissorJ" class="tSpan">@Html.ValidationMessageFor(model => model.OrgaoEmissor)</span>
-        </div>
-
-        <div class="campo">
-            @Html.LabelFor(model => model.Sexo)<br>
-            @Html.EditorFor(model => model.Sexo, new { id = "sexoJ", @class = "campoObrig", style = "width: 15px;" })
-            <span id="x_sexoJ" class="tSpan">@Html.ValidationMessageFor(model => model.Sexo)</span>
-        </div>
-    </fieldset>
-	
-	
+<form name="form" method="post" action="#" id="formularioJ" class="formulario">	
 	<fieldset>
-        <legend>Dados de acesso</legend>
-        <div class="campo">
-            @Html.LabelFor(model => model.User)<br>
-            @Html.EditorFor(model => model.User, new { id = "usuarioJ", @class = "campoObrig", style = "width: 15px; @placeholder="Nome do Usuário" })
-            <span id="x_usuarioJ" class="tSpan">@Html.ValidationMessageFor(model => model.User)</span>
-        </div>
-
-        <div class="campo">
-            @Html.LabelFor(model => model.Senha)<br>
-            @Html.EditorFor(model => model.Senha, new { id = "senhaJ", @class = "campoObrig", style = "width: 15px;" })
-            <span id="x_senhaJ" class="tSpan">@Html.ValidationMessageFor(model => model.Senha)</span>
-        </div>
-		
-		<div class="campo">
-            @Html.LabelFor(model => model.ConfirmarSenha)<br>
-            @Html.EditorFor(model => model.ConfirmarSenha, new { id = "confSenhaJ", @class = "campoObrig", style = "width: 15px;" })
-            <span id="x_confirmarSenhaJ" class="tSpan">@Html.ValidationMessageFor(model => model.ConfirmarSenha)</span>
-        </div>
-  
-        
-    </fieldset>
-	
+		<legend>Dados do Usuário</legend><br>
+		<div class="campo"> 
+			<label for="nomeJ">Nome:</label><br> 
+			<input type="text" name="nome" id="nomeJ" class="campoObrig iLetras" size="35" placeholder="Nome completo" maxlength="40" ><span id="x_nomeJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="cpfJ">CPF:</label><br> 
+			<input type="text" name="cpf" id="cpfJ" placeholder=" ___.___.___-__"  class="campoObrig" size="14" maxlength="14" ><span id="x_cpfJ" class="tSpan"></span>
+		</div><br>
+		<div class="campo"> 
+			<label for="rgJ">RG</label><br> 
+			<input type="text" name="rg" id="rgJ" size="18" maxlength="14" class="campoObrig"><span id="x_rgJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="orgaoEmissorJ">Órgão Emissor</label><br> 
+			<input type="text" name="orgaoEmissor" id="orgaoEmissorJ" placeholder="Ex. Detran" size="16" maxlength="14" class="campoObrig iLetras"><span id="x_orgaoEmissorJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="ufJ">UF:</label><br> 
+			<select id="ufJ" name="uf"> 
+				<option value="AC">AC</option> 
+				<option value="AL">AL</option> 
+				<option value="AM">AM</option> 
+				<option value="AP">AP</option> 
+				<option value="BA">BA</option> 
+				<option value="CE">CE</option> 
+				<option value="DF">DF</option> 
+				<option value="ES">ES</option> 
+				<option value="GO">GO</option> 
+				<option value="MA">MA</option> 
+				<option value="MT">MT</option> 
+				<option value="MS">MS</option> 
+				<option value="MG">MG</option> 
+				<option value="PA">PA</option> 
+				<option value="PB">PB</option> 
+				<option value="PR">PR</option> 
+				<option value="PE">PE</option> 
+				<option value="PI">PI</option> 
+				<option value="RJ" selected>RJ</option> 
+				<option value="RN">RN</option> 
+				<option value="RO">RO</option> 
+				<option value="RS">RS</option> 
+				<option value="RR">RR</option> 
+				<option value="SC">SC</option> 
+				<option value="SE">SE</option> 
+				<option value="SP">SP</option> 
+				<option value="TO">TO</option>
+			</select><span id="x_ufJ" class="tSpan"></span>
+		</div><!--Fim campo uf--><br>
+			<label for="tipoJ">Tipo:</label><br>
+			<div class="campo">
+				<select id="tipoJ" name="tipo"> 
+					<option selected value="1">ANTT</option>
+					<option value="2">DNIT</option>
+					<option selected value="3">ADM Sistema</option>
+					<option selected value="4">Usuário Posto</option>
+					<option value="5">TAC</option>
+					<option selected value="6">Transportador</option>
+				</select><span id="x_tipoJ" class="tSpan"></span>
+			</div>
+	</fieldset>
 	<fieldset>
-        <legend>Dados do contato</legend>
-        <div class="campo">
-            @Html.LabelFor(model => model.Telefone)<br>
-            @Html.EditorFor(model => model.Telefone, new { id = "telJ", @class = "campoObrig", @placeholder="( __ ) ____-____" }, @maxlength="100", style = "width: 15px;" })
-            <span id="x_telJ" class="tSpan">@Html.ValidationMessageFor(model => model.Telefone)</span>
-        </div>
-
-        <div class="campo">
-            @Html.LabelFor(model => model.Celular)<br>
-            @Html.EditorFor(model => model.Celular, new { id = "celJ", @class = "campoObrig", @placeholder="( __ ) ____-____" }, @maxlength="12", style = "width: 15px;" )
-            <span id="x_celJ" class="tSpan">@Html.ValidationMessageFor(model => model.Celular)</span>
-        </div>
-
-        <div class="campo">
-            @Html.LabelFor(model => model.Email)<br>
-            @Html.EditorFor(model => model.Email, new { id = "emailJ", @class = "campoObrig", @placeholder="contato@exemplo.com", @maxlength="13", style = "width: 15px;" })
-            <span id="x_emailJ" class="tSpan">@Html.ValidationMessageFor(model => model.Email)</span>
-        </div>
-    </fieldset>
+			<legend>Dados de Acesso</legend><br>
+			<div class="campo"> 
+				<label for="usuarioJ">Nome de Usuário:</label> <br> 
+				<input type="text" name="usuario" id="usuarioJ" class="campoObrig iLetras" placeholder="Nome do Usuário" maxlength="15"><span id="x_usuarioJ" class="tSpan"></span>
+			</div>			
+			<div class="campo"> 
+				<label for="senhaJ">Senha:</label><br> 
+				<input type="password" name="senha" id="senhaJ" class="campoObrig" size="14" placeholder="Digite sua senha" maxlength="15" ><span class="tSpan" id="x_senhaJ" ></span>
+			</div>
+										
+										
+			</fieldset>
+		<fieldset>
+			<legend>Dados Contato</legend><br>
+				<div class="campo"> 
+					<label for="emailJ">E-mail:</label> <br> 
+					<input type="email" name="email" id="emailJ"  placeholder="contato@exemplo.com" class="campoObrig" size="30"  maxlength="100"><span id="x_emailJ" class="tSpan"></span>
+				</div><br>				
+				<div class="campo"> 
+					<label for="telefoneJ">Telefone Fixo:</label><br> 
+					<input type="text" name="telefone" id="telefoneJ" placeholder="( __ ) ____-____"  maxlength="12"  class="campoObrig"><span id="x_telefoneJ" class="tSpan" ></span>
+				</div>
+				<div class="campo"> 
+					<label for="celularJ">Celular:</label><br> 
+					<input type="text" name="celular" id="celularJ" placeholder="( __ ) _____-____" maxlength="13" class="campoObrig"><span id="x_celularJ" class="tSpan"></span>
+				</div>		
+			</fieldset>
 							
-						<div class="botoes" id="botoes">
-							<input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
-							<input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
-						</div>
-			
-				
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
+<div class="botoes" id="botoes">
+	<input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
+	<input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
 </div>
-
+</form>
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
