@@ -1,6 +1,79 @@
-﻿@{
+.@{
     ViewBag.Title = "ui030relatorio";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ui030relatorio</h2>
+<h1>Relatórios Gerais</h1>
+    <form action="#" method="post" id="formularioJ">
+    	<fieldset>
+    	    <legend>Relatório</legend>
+    	    <div class="campo"> 
+    		    <label for="ufJ">UF</label><br> 
+    		    <select width="300" id="ufJ" name="uf" > 
+    			    <option value="AC">AC</option> 
+    			    <option value="AL">AL</option> 
+    			    <option value="AM">AM</option> 
+    			    <option value="AP">AP</option> 
+    			    <option value="BA">BA</option> 
+    			    <option value="CE">CE</option> 
+    			    <option value="DF">DF</option> 
+    			    <option value="ES">ES</option> 
+    			    <option value="GO">GO</option> 
+    			    <option value="MA">MA</option> 
+    			    <option value="MT">MT</option> 
+    			    <option value="MS">MS</option> 
+    			    <option value="MG">MG</option> 
+    			    <option value="PA">PA</option> 
+    			    <option value="PB">PB</option> 
+    			    <option value="PR">PR</option> 
+    			    <option value="PE">PE</option> 
+    			    <option value="PI">PI</option> 
+    			    <option value="RJ" selected>RJ</option> 
+    			    <option value="RN">RN</option> 
+    			    <option value="RO">RO</option> 
+    			    <option value="RS">RS</option> 
+    			    <option value="RR">RR</option> 
+    			    <option value="SC">SC</option> 
+    			    <option value="SE">SE</option> 
+    			    <option value="SP">SP</option> 
+    			    <option value="TO">TO</option>
+    		        </select><span id="x_ufJ" class="tSpan"></span>
+    		</div>
+    	    <div class="campo">
+    		    <label for="rodoviaJ">Rodovia</label><br>
+    		    <select id="rodoviaJ" name="rodovia">
+    			<option value="RODOVIA">RODOVIA</OPTION>
+    		    </select>
+    	    </div>
+    	    <div class ="radiorelatorio">
+    		    <div class="campo">
+    				    <input type="radio" name="capitalcirculado" id="capitalcirculadoJ" value="CAPITALCIRCULADO" checked>Capital Circulado
+    				    <br>
+    				    <input type="radio" name="pbt" id="pbtJ" value="PBT">Peso total de cargas transportadas
+    				    <br>
+    				    <input type="radio" name="totalveiculotrafegado" id="totalveiculotrafegadoJ" value="TOTALVEICULOTRAFEGADO">Total de veículos trafegados
+    				    <br>
+    				    <input type="radio" name="produtosmaistransportados" id="produtosmaistransportadosJ" value="PRODUTOSMAISTRANSPOTADOS">Produtos mais transportados
+    				    <br>
+    				    <input type="radio" name="tiposdeprodutosmaistransportados" value="TIPOESDEPRODUTOSMAISTRANSPORTADOS" id="tiposdeprodutosmaistransportadosJ"> Tipos de produtos mais transportados
+    				    <br>
+    				    <input type="radio" name="cargasporhora" id="cargasporhoraJ" value="CARGASPORHORA">Cargas por hora
+    				    <br>
+    				    <input type="radio" name="cameras" value="CAMERAS" id="camerasJ"> Câmeras
+    				    <br>
+    				    <input type="radio" name="balancas" value="BALANCAS" id="balancasJ">Balanças
+    		    </div>
+    	    </div><br>	
+    								
+    	</fieldset>
+            <div class="botaorelatorio">
+        	    <div class="botoes" id="botoes">
+        		    <input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
+        		    <input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
+        	    </div><!--Fim div botoes-->
+            </div><!-- Fim da div botaorelatorio -->
+    </form>
+    
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
