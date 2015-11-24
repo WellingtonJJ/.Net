@@ -1,6 +1,189 @@
-﻿@{
+.@{
     ViewBag.Title = "ui032minhaconta";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ui032minhaconta</h2>
+<h1>Minha Conta</h1>
+<form action="#" method="post" id="formularioJ">
+	<fieldset>
+		<legend>Dados de Pessoa Jurídica:</legend>
+		<div class="campo">
+			<label for="cnpjJ">CNPJ</label><br>
+			<input type="text" name="cnpj" id="cnpjJ" placeholder="" class="campoObrig" maxlength="18"><span id="x_cnpjJ" class="tSpan"></span>
+		</div>
+		<div class="campo">
+			<label for="nomeFantasiaJ">Nome Fantasia</label><br>
+			<input type="text" name="nomeFantasia" id="nomeFantasiaJ" class="campoObrig" placeholder="Nome Fantasia" maxlength="40"><span id="x_nomeFantasiJ" class="tSpan"></span>
+		</div>
+		<div class="campo">
+			<label for="razaoSocialJ">Razão Social</label><br>
+			<input type="text" name="razaoSocial" id="razaoSocialJ" class="campoObrig" placeholder="Razão Social" maxlength="40"><span id="x_razaoSocialJ" class="tSpan"></span>
+		</div>
+	</fieldset>
+    <fieldset>
+        <legend>Dados de Pessoa Física:</legend>
+		<div class="campo"> 
+			<label for="nomeJ">Nome</label><br> 
+			<input type="text" name="nome" id="nomeJ" class="campoObrig iLetras" placeholder="Nome Completo" size="47" maxlength="60"><span id="x_nomeJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="cpfJ">CPF</label><br> 
+			<input type="text" name="cpf" id="cpfJ" placeholder=" ____.____.____-___"  class="campoObrig" size="18" maxlength="14"><span id="x_cpfJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="dataJ">Data Nascimento</label><br> 
+			<input type="text" name="data" id="dataJ" size="14" placeholder="__/__/_____" maxlength="10" class="campoObrig data"><span id="x_dataJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="rgJ">RG</label><br> 
+			<input type="text" name="rg" id="rgJ" size="18" maxlength="14" class="campoObrig"><span id="x_rgJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="ufJ">UF</label><br> 
+			<select id="ufJ" name="uf"> 
+				<option value="AC">AC</option> 
+				<option value="AL">AL</option> 
+				<option value="AM">AM</option> 
+				<option value="AP">AP</option> 
+				<option value="BA">BA</option> 
+				<option value="CE">CE</option> 
+				<option value="DF">DF</option> 
+				<option value="ES">ES</option> 
+				<option value="GO">GO</option> 
+				<option value="MA">MA</option> 
+				<option value="MT">MT</option> 
+				<option value="MS">MS</option> 
+				<option value="MG">MG</option> 
+				<option value="PA">PA</option> 
+				<option value="PB">PB</option> 
+				<option value="PR">PR</option> 
+				<option value="PE">PE</option> 
+				<option value="PI">PI</option> 
+				<option value="RJ" selected>RJ</option> 
+				<option value="RN">RN</option> 
+				<option value="RO">RO</option> 
+				<option value="RS">RS</option> 
+				<option value="RR">RR</option> 
+				<option value="SC">SC</option> 
+				<option value="SE">SE</option> 
+				<option value="SP">SP</option> 
+				<option value="TO">TO</option>
+			    </select><span id="x_ufJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+			<label for="orgaoEmissorJ">Orgão Emissor</label><br> 
+			<input type="text" name="orgaoEmissor" id="orgaoEmissorJ" placeholder="Ex. Detran" size="19" maxlength="14" class="campoObrig iLetras"><span id="x_orgaoEmissorJ" class="tSpan"></span>
+		</div>							
+		<div class="campo"> 
+			<label for="sexoJ">Sexo</label><br> 
+			<select id="sexoJ" name="sexo"> 
+				<option value="fem">Feminino</option> 
+				<option value="masc" selected>Masculino</option> 
+		</select><span id="x_sexoJ" class="tSpan"></span>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Dados do Contato</legend>
+			<div class="campo"> 
+				<label for="telJ">Telefone</label><br> 
+				<input type="text" name="tel" id="telJ" placeholder="( __ ) ____-____" size="14" class="campoObrig" maxlength="12"><span id="x_telJ" class="tSpan" ></span>
+			</div>
+			<div class="campo"> 
+				<label for="celJ">Celular</label><br> 
+				<input type="text" name="cel" id="celJ" placeholder="( __ ) _____-____" size="16" maxlength="13" class="campoObrig"><span id="x_celJ" class="tSpan"></span>
+			</div>
+			<div class="campo"> 
+				<label for="emailJ">E-mail</label><br> 
+				<input type="email" name="email" id="emailJ" size="29" placeholder="contato@exemplo.com" class="campoObrig"><span id="x_emailJ" class="tSpan"></span>
+			</div><br>
+	</fieldset>
+    <fieldset>	
+    	<legend>Dados de Endereço: </legend>
+    	<div class="campo"> 
+    		<label for="logradouroJ">Logradouro:</label><br><br>
+    		<input type="text" name="logradouro" id="logradouroJ" maxlength="40" class="campoObrig" size="40" placeholder="Rua, Av"><span id="x_logradouroJ" class="tSpan"></span>
+    	</div>
+    	<div class="campo"> 
+    		<label for="numeroJ">Número:</label><br><br> 
+    		<input type="text" name="numero" id="numeroJ" maxlength="8" size="8" class="campoObrig" placeholder="Nº"><span id="x_numeroJ" class="tSpan"></span>
+    	</div>
+    	<div class="campo"> 
+    		<label for="complementoJ">Complemento:</label><br><br>
+    		<input type="text" name="complemento" id="complementoJ" size="11" maxlength="40"  placeholder=""><span id="x_complementoJ" class="tSpan"></span>
+    	</div>
+    	<div class="campo"> 
+    		<label for="bairroJ">Bairro:</label><br><br>
+    		<input type="text" name="bairro" id="bairroJ" maxlength="40" size="18" class="campoObrig" placeholder=""><span id="x_bairroJ" class="tSpan"></span>
+    	</div>
+    	<div class="campo"> 
+    		<label for="cepJ">CEP:</label><br><br> 
+    		<input type="text" name="cep" id="cepJ" maxlength="10" size="12" class="campoObrig" placeholder="______-____"><span id="x_cepJ" class="tSpan"></span>
+    	</div>
+    	<div class="campo"> 
+    		<label for="cidadeJ">Cidade:</label><br><br> 
+    		<input type="text" name="cidade" id="cidadeJ" maxlength="20" size="22" class="campoObrig  iLetras" placeholder="Ex: Rio de Janeiro"><span id="x_cidadeJ" class="tSpan"></span>
+    	</div>
+    	<div class="campo"> 
+    		<label for="ufInicialJ">UF:</label><br><br> 
+    		<select id="ufInicialJ" name="ufInicial"> 
+    			<option value="AC">AC</option> 
+    			<option value="AL">AL</option> 
+    			<option value="AM">AM</option> 
+    			<option value="AP">AP</option> 
+    			<option value="BA">BA</option> 
+    			<option value="CE">CE</option> 
+    			<option value="DF">DF</option> 
+    			<option value="ES">ES</option> 
+    			<option value="GO">GO</option> 
+    			<option value="MA">MA</option> 
+    			<option value="MT">MT</option> 
+    			<option value="MS">MS</option> 
+    			<option value="MG">MG</option> 
+    			<option value="PA">PA</option> 
+    			<option value="PB">PB</option> 
+    			<option value="PR">PR</option> 
+    			<option value="PE">PE</option> 
+    			<option value="PI">PI</option> 
+    			<option value="RJ" selected="">RJ</option> 
+    			<option value="RN">RN</option> 
+    			<option value="RO">RO</option> 
+    			<option value="RS">RS</option> 
+    			<option value="RR">RR</option> 
+    			<option value="SC">SC</option> 
+    			<option value="SE">SE</option> 
+    			<option value="SP">SP</option> 
+    			<option value="TO">TO</option>
+    	        </select><span id="x_ufInicialJ" class="tSpan"></span>
+    	</div><!--Fim campo ufInicial-->
+	</fieldset>
+	<fieldset>
+		<legend>Dados de Acesso</legend>
+		<div class="campo"> 
+				<label for="usuarioJ">Usuário:</label><br>
+				<input type="text" name="usuario" id="usuarioJ" maxlength="10" size="20" placeholder="nome de usuário" class="campoObrig"><span id="x_usuarioJ" class="tSpan"></span>
+		</div>
+		<div class="campo"> 
+				<label for="senhaJ">Senha Atual:</label><br>
+				<input type="text" name="senha" id="senhaJ" maxlength="10" size="20" placeholder="Escolha uma senha" class="campoObrig"><span id="x_senhaJ" class="tSpan"></span>
+		</div>
+		<br>
+		<div class="campo"> 
+			<label for="novasenhaJ">Nova Senha:</label><br>
+			<input type="text" name="novasenha" id="novasenhaJ" maxlength="10" size="20" class="campoObrig"><span id="x_novasenhaJ" class="tSpan"></span>
+        </div>
+        <div class="campo">
+            <label for="confSenhaJ">Confirmar Nova Senha:</label><br>
+            <input type="text" name="confSenha" id="confSenhaJ" maxlength="10" size="20" class="campoObrig"><span id="x_confSenhaJ" class="tSpan"></span>
+        </div>
+    </fieldset>
+
+    <div class="botoes" id="botoes">
+        <input type="reset" value="CANCELAR" name="Limpar" id="limparJ" class="botaoJ">
+        <input type="submit" value="ENVIAR" name="enviar" id="enviarJ" class="botaoJ">
+    </div>
+
+</form>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
